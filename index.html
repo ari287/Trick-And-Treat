@@ -166,24 +166,8 @@
         padding: 0.35rem 0;
       }
 
-      .nav-links a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, #7cfbff, #ffb347);
-        transition: width 0.18s ease;
-      }
-
-      .nav-links a:hover::after {
-        width: 100%;
-      }
-
       .nav-cta {
-        padding: 0.55rem 1.2rem;
+        padding: 0.55rem 1.2rem !important;
         border-radius: 999px;
         border: 1px solid rgba(255, 255, 255, 0.25);
         background: radial-gradient(
@@ -198,6 +182,11 @@
         align-items: center;
         gap: 0.35rem;
         box-shadow: var(--ttt-shadow-light);
+        transition: opacity 0.5s ease;
+      }
+
+      .nav-cta:hover {
+        opacity: 0.7;
       }
 
       .nav-cta span {
