@@ -1,2249 +1,2576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Trick &amp; Treat Training | Dog Trainer Melbourne</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Trick &amp; Treat Training is a Melbourne dog trainer helping you turn your feral child into your favourite child with kind, practical in-home dog training." />
-  <meta name="keywords" content="dog trainer Melbourne, puppy training Melbourne, in-home dog training, loose lead walking, dog behaviour help" />
-  <meta name="robots" content="index,follow" />
-  <meta name="author" content="Trick &amp; Treat Training" />
-  <link rel="canonical" href="https://www.trickandtreattraining.com/" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trick &amp; Treat Training | Dog Trainer Melbourne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Trick &amp; Treat Training is a Melbourne dog trainer helping you turn your feral child into your favourite child with kind, practical in-home dog training."
+    />
+    <meta
+      name="keywords"
+      content="dog trainer Melbourne, puppy training Melbourne, in-home dog training, loose lead walking, dog behaviour help"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Trick &amp; Treat Training" />
+    <link rel="canonical" href="https://www.trickandtreattraining.com/" />
 
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Trick &amp; Treat Training | Dog Trainer Melbourne" />
-  <meta property="og:description" content="Positive, practical dog training across Melbourne. Private sessions, puppy support and walk &amp; train – helping you take the lead." />
-  <meta property="og:url" content="https://www.trickandtreattraining.com/" />
-  <meta property="og:locale" content="en_AU" />
-  <meta property="og:image" content="https://www.trickandtreattraining.com/images/ari-standing-golden-front.jpg" />
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Trick &amp; Treat Training | Dog Trainer Melbourne"
+    />
+    <meta
+      property="og:description"
+      content="Positive, practical dog training across Melbourne. Private sessions, puppy support and walk &amp; train – helping you take the lead."
+    />
+    <meta property="og:url" content="https://www.trickandtreattraining.com/" />
+    <meta property="og:locale" content="en_AU" />
+    <meta
+      property="og:image"
+      content="https://www.trickandtreattraining.com/images/ari-standing-golden-front.jpg"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/logo-ttt.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-ttt.png" />
 
-  <style>
-    :root {
-      --ttt-teal: #00c2c7;
-      --ttt-dark: #03141d;
-      --ttt-mid: #073347;
-      --ttt-cream: #f7f5ef;
-      --ttt-accent: #ffb347;
-      --ttt-radius-lg: 20px;
-      --ttt-radius-md: 14px;
-      --ttt-shadow-soft: 0 20px 45px rgba(0,0,0,0.25);
-      --ttt-shadow-light: 0 12px 30px rgba(0,0,0,0.18);
-      --ttt-max-width: 1120px;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #041018;
-      background: radial-gradient(circle at top left, #0c455e 0%, #03141d 40%, #02070b 100%);
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: 100%;
-      max-width: var(--ttt-max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* HEADER / NAV */
-
-    .site-header {
-      position: fixed;
-      inset: 0 0 auto 0;
-      height: 74px;
-      z-index: 40;
-      backdrop-filter: blur(18px);
-      background: linear-gradient(to bottom, rgba(2,11,19,0.96), rgba(2,11,19,0.88), transparent);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 74px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      color: #f9fafb;
-    }
-
-    .brand-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 999px;
-      background: #02060a;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.45);
-      padding: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .brand-mark img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .brand-text-main {
-      font-weight: 650;
-      letter-spacing: 0.03em;
-      font-size: 0.98rem;
-    }
-
-    .brand-text-sub {
-      font-size: 0.72rem;
-      color: rgba(217, 235, 244, 0.9);
-      margin-top: 1px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.8rem;
-      font-size: 0.92rem;
-    }
-
-    .nav-links a {
-      color: #dbe8ee;
-      position: relative;
-      padding: 0.35rem 0;
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 2px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #7cfbff, #ffb347);
-      transition: width 0.18s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-cta {
-      padding: 0.55rem 1.2rem;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.25);
-      background: radial-gradient(circle at top left, #00c2c7, #0dd6ea, #ffb347);
-      color: #021017;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      box-shadow: var(--ttt-shadow-light);
-    }
-
-    .nav-cta span {
-      font-size: 1.1rem;
-    }
-
-    .nav-toggle {
-      display: none;
-      border: none;
-      background: none;
-      color: #f9fafb;
-      font-size: 1.5rem;
-    }
-
-    main {
-      margin-top: 74px;
-    }
-
-    /* HERO */
-
-    .hero {
-      position: relative;
-      min-height: 88vh;
-      color: #f9fafb;
-      overflow: hidden;
-      isolation: isolate;
-    }
-
-    .hero-media {
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      overflow: hidden;
-    }
-
-    .hero-media video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background:
-        radial-gradient(circle at top left, rgba(0,194,199,0.55), transparent 55%),
-        linear-gradient(120deg, rgba(2,9,15,0.95), rgba(2,9,15,0.95) 35%, rgba(2,9,15,0.7) 70%, rgba(1,5,9,0.92));
-    }
-
-    .hero-inner {
-      max-width: var(--ttt-max-width);
-      margin: 0 auto;
-      padding: 3.5rem 1.5rem 4.5rem;
-      gap: 2.6rem;
-      align-items: center;
-    }
-
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      background: rgba(2, 18, 27, 0.9);
-      border: 1px solid rgba(255,255,255,0.16);
-      box-shadow: var(--ttt-shadow-light);
-      font-size: 0.78rem;
-      margin-bottom: 1rem;
-      animation: fadeUp 0.7s ease-out both;
-    }
-
-    .hero-pill-icon {
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 0%, #ffffff, #00c2c7 55%, #02141d);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-    }
-
-    .hero-title {
-      font-size: clamp(2.4rem, 3vw + 1.4rem, 3.3rem);
-      margin: 0 0 0.6rem;
-      letter-spacing: 0.01em;
-      animation: fadeUp 0.8s ease-out both;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .hero-title span {
-      background: linear-gradient(90deg, #7cfbff, #fff4d3);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    .hero-tagline {
-      font-size: 1rem;
-      max-width: 30rem;
-      color: rgba(225, 239, 247, 0.9);
-      margin-bottom: 1.4rem;
-      animation: fadeUp 0.9s ease-out both;
-    }
-
-    .other-hero-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-    }
-
-    
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-      animation: fadeUp 1.1s ease-out both;
-    }
-
-    .btn-primary,
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      border-radius: 999px;
-      padding: 0.8rem 1.4rem;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      text-decoration: none;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: radial-gradient(circle at top left, #00c2c7, #0dd6ea, #ffb347);
-      color: #020b10;
-      box-shadow: var(--ttt-shadow-soft);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px) scale(1.01);
-      box-shadow: 0 24px 55px rgba(0,0,0,0.55);
-    }
-
-    .btn-ghost {
-      background: rgba(3, 22, 33, 0.9);
-      border: 1px solid rgba(219, 232, 238, 0.55);
-      color: #e9f4fb;
-    }
-
-    .btn-ghost:hover {
-      background: rgba(8, 33, 46, 0.98);
-      transform: translateY(-1px);
-    }
-
-    .hero-footnote {
-      margin-top: 0.9rem;
-      font-size: 0.8rem;
-      color: rgba(206, 230, 241, 0.92);
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      animation: fadeUp 1.2s ease-out both;
-    }
-
-    .hero-footnote span {
-      font-size: 1.1rem;
-    }
-
-    /* HERO RIGHT TILE STACK */
-
-    .hero-stack {
-      display: grid;
-      gap: 1rem;
-      animation: fadeInSoft 1s ease-out 0.4s both;
-      background: linear-gradient(
-        135deg,
-        rgba(255,255,255,0.15),
-        rgba(255,255,255,0.05)
-      );
-      padding: 1.4rem 1.1rem;
-      border-radius: 22px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-    }
-
-    .hero-profile-card {
-      background: rgba(247, 245, 239, 0.98);
-      color: #021017;
-      border-radius: 22px;
-      padding: 1.3rem 1.3rem 1.5rem;
-      box-shadow: var(--ttt-shadow-soft);
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.9rem;
-      align-items: center;
-    }
-
-    .hero-profile-avatar {
-      width: 70px;
-      height: 70px;
-      border-radius: 20px;
-      overflow: hidden;
-      background: #02141d;
-    }
-
-    .hero-profile-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.04);
-      transition: transform 0.4s ease;
-    }
-
-    @media (max-width: 780px) {
-      .hero-stack {
-        display: flex;
-        flex-direction: column;
-        gap: 1.4rem;
+    <style>
+      :root {
+        --ttt-teal: #00c2c7;
+        --ttt-dark: #03141d;
+        --ttt-mid: #073347;
+        --ttt-cream: #f7f5ef;
+        --ttt-accent: #ffb347;
+        --ttt-radius-lg: 20px;
+        --ttt-radius-md: 14px;
+        --ttt-shadow-soft: 0 20px 45px rgba(0, 0, 0, 0.25);
+        --ttt-shadow-light: 0 12px 30px rgba(0, 0, 0, 0.18);
+        --ttt-max-width: 1120px;
       }
 
-      .hero-profile-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 1.5rem 1.4rem;
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
       }
 
-      .hero-profile-avatar {
-        width: 100%;
-        height: auto;
-        max-width: 180px;
-        margin: 0 auto 1rem;
-        border-radius: 22px;
-      }
-    }
-
-    .hero-profile-card:hover .hero-profile-avatar img {
-      transform: scale(1.08);
-    }
-
-    .hero-profile-body h2 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-
-    .hero-profile-body p {
-      margin: 0.2rem 0 0.4rem;
-      font-size: 0.84rem;
-      color: #4a5b63;
-    }
-
-    .hero-profile-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      font-size: 0.75rem;
-    }
-
-    .hero-profile-tag {
-      padding: 0.26rem 0.55rem;
-      border-radius: 999px;
-      background: #edf3f6;
-      color: #23323a;
-    }
-
-    .hero-stats-row {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.7rem;
-    }
-
-    .hero-stat-tile {
-      border-radius: 18px;
-      background: rgba(2, 15, 23, 0.96);
-      color: #f1fbff;
-      padding: 0.7rem 0.8rem;
-      font-size: 0.8rem;
-      box-shadow: var(--ttt-shadow-light);
-      border: 1px solid rgba(163, 209, 228, 0.35);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .hero-stat-tile:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.45);
-    }
-
-    .hero-stat-label {
-      opacity: 0.8;
-      margin-bottom: 0.2rem;
-    }
-
-    .hero-stat-value {
-      font-weight: 650;
-      font-size: 1.05rem;
-    }
-
-    .hero-dog-quote {
-      border-radius: 18px;
-      background: linear-gradient(135deg, #02141d, #06293b);
-      padding: 0.75rem 0.9rem;
-      font-size: 0.82rem;
-      color: #e5f3fb;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.8rem;
-      box-shadow: var(--ttt-shadow-light);
-      border: 1px solid rgba(120, 186, 210, 0.35);
-    }
-
-    .hero-dog-quote-icon {
-      font-size: 1.4rem;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    /* GENERIC SECTION STYLES */
-
-    section {
-      padding: 4rem 0;
-    }
-
-    .section-light {
-      background: var(--ttt-cream);
-    }
-
-    .section-alt {
-      background: #ffffff;
-    }
-
-    .section-dark {
-      background: radial-gradient(circle at top right, #164a64 0%, #03141d 50%, #02070b 100%);
-      color: #f4fbff;
-    }
-
-    /* Soft gradient depth for sections */
-    .section-light,
-    .section-alt,
-    .section-dark {
-      position: relative;
-      overflow: hidden;
-      z-index: 0;
-    }
-
-    .section-light::before,
-    .section-alt::before,
-    .section-dark::before {
-      content: "";
-      position: absolute;
-      inset: -20%;
-      background:
-        radial-gradient(circle at top left, rgba(0, 194, 199, 0.16), transparent 55%),
-        radial-gradient(circle at bottom right, rgba(255, 179, 71, 0.14), transparent 55%);
-      opacity: 0.9;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .section-kicker {
-      text-align: center;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: rgba(94, 116, 128, 0.95);
-      margin-bottom: 0.35rem;
-    }
-
-    .section-dark .section-kicker {
-      color: rgba(191, 214, 227, 0.96);
-    }
-
-    .section-title {
-      text-align: center;
-      margin: 0 0 0.45rem;
-      font-size: 1.9rem;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      max-width: 560px;
-      margin: 0 auto 2.4rem;
-      font-size: 0.96rem;
-      color: rgba(67, 84, 96, 0.95);
-    }
-
-    .section-dark .section-subtitle {
-      color: rgba(218, 236, 244, 0.9);
-    }
-
-    /* ABOUT TILES */
-
-    .about-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      gap: 2.7rem;
-      align-items: center;
-    }
-
-    .about-body h2 {
-      font-size: 1.6rem;
-      margin-top: 0;
-      margin-bottom: 0.6rem;
-    }
-
-    .about-body p {
-      font-size: 0.95rem;
-      color: #44535c;
-    }
-
-    .about-tiles {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.75rem;
-      margin: 1.3rem 0 1.6rem;
-    }
-
-    .about-tile {
-      border-radius: 16px;
-      background: #ffffff;
-      padding: 0.9rem 0.9rem 1rem;
-      font-size: 0.86rem;
-      box-shadow: 0 12px 26px rgba(0,0,0,0.08);
-      border: 1px solid rgba(0,0,0,0.03);
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-    }
-
-    .about-tile:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-    }
-
-    .about-tile-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      font-size: 0.92rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .about-tile-title span {
-      font-size: 1.05rem;
-    }
-
-    .about-highlight {
-      border-radius: 16px;
-      background: #e9f4f8;
-      padding: 0.85rem 1rem;
-      font-size: 0.86rem;
-      color: #28404c;
-      border: 1px solid rgba(122, 186, 210, 0.6);
-    }
-
-    .about-media {
-      position: relative;
-      max-width: 480px;
-      margin: 0 auto;
-      animation: fadeInSoft 0.9s ease-out both;
-    }
-
-    .about-main-photo {
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: var(--ttt-shadow-soft);
-    }
-
-    .about-main-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .about-floating-photo {
-      position: absolute;
-      right: -4%;
-      bottom: -10%;
-      width: 52%;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: var(--ttt-shadow-light);
-      border: 3px solid #f7f5ef;
-    }
-
-    .about-floating-label {
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
-      background: rgba(3, 20, 29, 0.9);
-      color: #f9fafb;
-      border-radius: 999px;
-      padding: 0.25rem 0.6rem;
-      font-size: 0.72rem;
-    }
-
-
-    /* MEET ARI SECTION */
-
-    .meet-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 2.4rem;
-      align-items: center;
-      margin-top: 2.2rem;
-    }
-
-    .meet-copy h2 {
-      font-size: 1.5rem;
-      margin: 0 0 0.7rem;
-    }
-
-    .meet-copy p {
-      font-size: 0.95rem;
-      color: #435460;
-      margin: 0 0 0.7rem;
-    }
-
-    .meet-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.4rem 0 0;
-      display: grid;
-      gap: 0.4rem;
-      font-size: 0.9rem;
-      color: #374151;
-    }
-
-    .meet-list li::before {
-      content: "•";
-      color: #0ea5e9;
-      margin-right: 0.45rem;
-    }
-
-    .meet-photo {
-      position: relative;
-      max-width: 360px;
-      margin: 0 auto;
-    }
-
-    .meet-photo-frame {
-      border-radius: 30px;
-      overflow: hidden;
-      box-shadow: var(--ttt-shadow-soft);
-      border: 3px solid rgba(247, 245, 239, 0.95);
-      background: radial-gradient(circle at top, rgba(0, 194, 199, 0.22), rgba(2, 11, 19, 0.96));
-    }
-
-    .meet-photo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .meet-photo-tag {
-      position: absolute;
-      left: 12px;
-      bottom: 12px;
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(2, 11, 19, 0.92);
-      color: #e5f3fb;
-      font-size: 0.74rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    /* SERVICES GRID TILES */
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1.3rem;
-    }
-
-    .service-card {
-      border-radius: var(--ttt-radius-lg);
-      background: #ffffff;
-      padding: 1.2rem 1.2rem 1.35rem;
-      box-shadow: var(--ttt-shadow-light);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-      border: 1px solid rgba(0,0,0,0.03);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 22px 50px rgba(0,0,0,0.16);
-    }
-
-    .service-chip {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #6a7a83;
-    }
-
-    .service-title {
-      font-size: 1.02rem;
-      font-weight: 600;
-    }
-
-    .service-price {
-      font-size: 1.14rem;
-      font-weight: 700;
-      color: #021017;
-    }
-
-    .service-body {
-      font-size: 0.86rem;
-      color: #4c5c64;
-      margin-top: 0.2rem;
-      flex: 1;
-    }
-
-    .service-note {
-      font-size: 0.78rem;
-      color: #7a4a12;
-      margin-top: 0.4rem;
-      padding-top: 0.35rem;
-      border-top: 1px dashed rgba(209, 184, 137, 0.75);
-    }
-
-    .service-ribbon {
-      position: absolute;
-      top: 0.9rem;
-      right: -2.4rem;
-      transform: rotate(36deg);
-      background: linear-gradient(90deg, #00c2c7, #ffb347);
-      color: #021017;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.13em;
-      padding: 0.25rem 2.6rem;
-      font-weight: 600;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-
-    /* QUICK TIPS LIBRARY */
-
-    .tips-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.4rem;
-      margin-top: 2.1rem;
-    }
-
-    .tip-card {
-      position: relative;
-      border-radius: var(--ttt-radius-lg);
-      padding: 1.2rem 1.2rem 1.25rem;
-      background:
-        radial-gradient(circle at top left, rgba(0, 194, 199, 0.15), rgba(255, 255, 255, 0.98));
-      box-shadow: var(--ttt-shadow-light);
-      border: 1px solid rgba(15, 23, 42, 0.06);
-      overflow: hidden;
-    }
-
-    .tip-tag {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #0f766e;
-      margin-bottom: 0.4rem;
-    }
-
-    .tip-card h3 {
-      font-size: 0.98rem;
-      margin: 0 0 0.45rem;
-      color: #021017;
-    }
-
-    .tip-card p {
-      font-size: 0.9rem;
-      margin: 0;
-      color: #4b5563;
-    }
-
-    .tip-pill {
-      margin-top: 0.7rem;
-      font-size: 0.8rem;
-      color: #1f2933;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.04);
-      display: inline-block;
-    }
-
-    .tip-card::after {
-      content: "";
-      position: absolute;
-      right: -25%;
-      bottom: -25%;
-      width: 60%;
-      aspect-ratio: 1/1;
-      border-radius: 999px;
-      background: radial-gradient(circle at center, rgba(14, 165, 233, 0.18), transparent 60%);
-      opacity: 0.9;
-      pointer-events: none;
-    }
-
-    /* SERVICE AREA MAP */
-
-    .service-area-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-      gap: 2rem;
-      align-items: start;
-      margin-top: 2.2rem;
-    }
-
-    .service-area-copy p {
-      font-size: 0.92rem;
-      color: #425563;
-    }
-
-    .service-area-list {
-      margin: 1rem 0 0.4rem;
-      padding-left: 1.1rem;
-      font-size: 0.9rem;
-      color: #111827;
-      display: grid;
-      gap: 0.15rem;
-    }
-
-    .service-area-note {
-      font-size: 0.85rem;
-      color: #4b5563;
-      margin-top: 0.5rem;
-    }
-
-    .map-embed-wrapper {
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: var(--ttt-shadow-soft);
-      border: 2px solid rgba(15, 23, 42, 0.06);
-      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 1));
-      min-height: 260px;
-    }
-
-    .map-embed-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-
-    .map-caption {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-top: 0.45rem;
-      text-align: right;
-    }
-    /* GALLERY TILES */
-
-    .gallery-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
-      gap: 1.6rem;
-      align-items: stretch;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.4rem;
-    }
-
-    .gallery-item {
-      position: relative;
-      border-radius: 26px;
-      overflow: hidden;
-      box-shadow: var(--ttt-shadow-light);
-      aspect-ratio: 3 / 4;
-      background: #000;
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.05);
-      transition: transform 0.35s ease;
-    }
-
-    .gallery-item:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 55px rgba(0,0,0,0.45);
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-
-    .gallery-tag {
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(2, 15, 23, 0.78);
-      color: #f9fafb;
-      font-size: 0.8rem;
-    }
-
-    .gallery-feature-card {
-      border-radius: 24px;
-      background: #ffffff;
-      padding: 1.3rem 1.3rem 1.45rem;
-      box-shadow: var(--ttt-shadow-light);
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-    }
-
-    .gallery-feature-title {
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-
-    .gallery-feature-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      font-size: 0.8rem;
-    }
-
-    .gallery-feature-badge {
-      padding: 0.28rem 0.7rem;
-      border-radius: 999px;
-      background: #edf3f6;
-      color: #22323d;
-    }
-
-    /* BOOKING / CALENDLY */
-
-    .calendly-wrapper {
-      border-radius: 26px;
-      background: #020c12;
-      padding: 1.4rem;
-      box-shadow: var(--ttt-shadow-soft);
-      border: 1px solid rgba(173, 210, 230, 0.28);
-    }
-
-    .calendly-text {
-      font-size: 0.9rem;
-      color: rgba(227, 240, 247, 0.9);
-      margin-bottom: 1rem;
-    }
-
-    .calendly-inline-widget {
-      min-width: 320px;
-      height: 680px;
-      border-radius: 18px;
-      overflow: hidden;
-      background: #ffffff;
-    }
-
-    /* FAQ */
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.3rem;
-    }
-
-    .faq-item {
-      border-radius: 18px;
-      background: rgba(2, 16, 24, 0.96);
-      border: 1px solid rgba(173, 210, 230, 0.3);
-      box-shadow: var(--ttt-shadow-light);
-      padding: 1.1rem 1.2rem 1.2rem;
-      font-size: 0.9rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .faq-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 48px rgba(0,0,0,0.38);
-    }
-
-    .faq-item h3 {
-      margin: 0 0 0.45rem;
-      font-size: 1rem;
-    }
-
-    .faq-item p {
-      margin: 0;
-      color: rgba(223, 238, 246, 0.9);
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #02070c;
-      color: rgba(222, 235, 242, 0.92);
-      padding: 2.3rem 0 2.5rem;
-      font-size: 0.85rem;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-      gap: 2rem;
-      align-items: flex-start;
-    }
-
-    .footer-brand-line {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-    }
-
-    .footer-logo-small {
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .footer-logo-small img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .footer-contact {
-      margin-top: 0.7rem;
-      display: grid;
-      gap: 0.2rem;
-    }
-
-    .footer-contact a {
-      color: inherit;
-    }
-
-    .footer-meta {
-      text-align: right;
-      color: rgba(153, 172, 184, 0.92);
-    }
-
-    .footer-meta p {
-      margin: 0.1rem 0;
-    }
-
-    /* ANIMATIONS */
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInSoft {
-      from { opacity: 0; transform: translateY(18px) scale(0.98); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 960px) {
-      .hero-inner {
-        grid-template-columns: minmax(0, 1fr);
-        padding-top: 3rem;
+      html {
+        scroll-behavior: smooth;
       }
 
-      .hero-stack {
-        max-width: 430px;
-        margin: 0 auto;
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        color: #041018;
+        background: radial-gradient(
+          circle at top left,
+          #0c455e 0%,
+          #03141d 40%,
+          #02070b 100%
+        );
+        line-height: 1.6;
       }
 
-      .about-layout {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .about-media {
-        order: -1;
-        margin-bottom: 1.4rem;
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .gallery-layout {
-        grid-template-columns: minmax(0, 1fr);
-
-      .meet-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .tips-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .service-area-layout {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      }
-
-      .footer-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .footer-meta {
-        text-align: left;
-      }
-    }
-
-    @media (max-width: 720px) {
-     
-      .hero-tagline {
-        font-size: 22px;
-      }
-
-      .hero-actions {
-        justify-content: center !important;
-      }
-      .nav-toggle {
+      img {
+        max-width: 100%;
         display: block;
       }
 
-      .nav-links {
-        position: absolute;
-        inset: 74px 0 auto 0;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0.75rem 1.5rem 1.1rem;
-        background: rgba(2,11,19,0.97);
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        transform-origin: top;
-        transform: scaleY(0);
-        opacity: 0;
-        pointer-events: none;
-        transition: transform 0.16s ease, opacity 0.16s ease;
+      a {
+        color: inherit;
+        text-decoration: none;
       }
 
-      .nav-links.open {
-        transform: scaleY(1);
-        opacity: 1;
-        pointer-events: auto;
+      .container {
+        width: 100%;
+        max-width: var(--ttt-max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* HEADER / NAV */
+
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        height: 74px;
+        z-index: 40;
+        backdrop-filter: blur(18px);
+        background: linear-gradient(
+          to bottom,
+          rgba(2, 11, 19, 0.96),
+          rgba(2, 11, 19, 0.88),
+          transparent
+        );
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 74px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: #f9fafb;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        background: #02060a;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .brand-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .brand-text-main {
+        font-weight: 650;
+        letter-spacing: 0.03em;
+        font-size: 0.98rem;
+      }
+
+      .brand-text-sub {
+        font-size: 0.72rem;
+        color: rgba(217, 235, 244, 0.9);
+        margin-top: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        font-size: 0.92rem;
+      }
+
+      .nav-links a {
+        color: #dbe8ee;
+        position: relative;
+        padding: 0.35rem 0;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #7cfbff, #ffb347);
+        transition: width 0.18s ease;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
       }
 
       .nav-cta {
-        width: 100%;
-        justify-content: center;
+        padding: 0.55rem 1.2rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: radial-gradient(
+          circle at top left,
+          #00c2c7,
+          #0dd6ea,
+          #ffb347
+        );
+        color: #021017;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        box-shadow: var(--ttt-shadow-light);
       }
+
+      .nav-cta span {
+        font-size: 1.1rem;
+      }
+
+      .nav-toggle {
+        display: none;
+        border: none;
+        background: none;
+        color: #f9fafb;
+        font-size: 1.5rem;
+      }
+
+      main {
+        margin-top: 74px;
+      }
+
+      /* HERO */
+
+      .hero {
+        position: relative;
+        min-height: 88vh;
+        color: #f9fafb;
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .hero-media {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        overflow: hidden;
+      }
+
+      .hero-media video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: radial-gradient(
+            circle at top left,
+            rgba(0, 194, 199, 0.55),
+            transparent 55%
+          ),
+          linear-gradient(
+            120deg,
+            rgba(2, 9, 15, 0.95),
+            rgba(2, 9, 15, 0.95) 35%,
+            rgba(2, 9, 15, 0.7) 70%,
+            rgba(1, 5, 9, 0.92)
+          );
+      }
+
+      .hero-inner {
+        max-width: var(--ttt-max-width);
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem 4.5rem;
+        gap: 2.6rem;
+        align-items: center;
+      }
+
+      .hero-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        background: rgba(2, 18, 27, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        box-shadow: var(--ttt-shadow-light);
+        font-size: 0.78rem;
+        margin-bottom: 1rem;
+        animation: fadeUp 0.7s ease-out both;
+      }
+
+      .hero-pill-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 999px;
+        background: radial-gradient(
+          circle at 30% 0%,
+          #ffffff,
+          #00c2c7 55%,
+          #02141d
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+      }
+
+      .hero-title {
+        font-size: clamp(2.4rem, 3vw + 1.4rem, 3.3rem);
+        margin: 0 0 0.6rem;
+        letter-spacing: 0.01em;
+        animation: fadeUp 0.8s ease-out both;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-title span {
+        background: linear-gradient(90deg, #7cfbff, #fff4d3);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .hero-tagline {
+        font-size: 1rem;
+        max-width: 30rem;
+        color: rgba(225, 239, 247, 0.9);
+        margin-bottom: 1.4rem;
+        animation: fadeUp 0.9s ease-out both;
+      }
+
+      .other-hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        align-items: center;
+        animation: fadeUp 1.1s ease-out both;
+      }
+
+      .btn-primary,
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border-radius: 999px;
+        padding: 0.8rem 1.4rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        transition: transform 0.15s ease, box-shadow 0.15s ease,
+          background 0.15s ease, color 0.15s ease;
+        white-space: nowrap;
+      }
+
+      .btn-primary {
+        background: radial-gradient(
+          circle at top left,
+          #00c2c7,
+          #0dd6ea,
+          #ffb347
+        );
+        color: #020b10;
+        box-shadow: var(--ttt-shadow-soft);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 24px 55px rgba(0, 0, 0, 0.55);
+      }
+
+      .btn-ghost {
+        background: rgba(3, 22, 33, 0.9);
+        border: 1px solid rgba(219, 232, 238, 0.55);
+        color: #e9f4fb;
+      }
+
+      .btn-ghost:hover {
+        background: rgba(8, 33, 46, 0.98);
+        transform: translateY(-1px);
+      }
+
+      .hero-footnote {
+        margin-top: 0.9rem;
+        font-size: 0.8rem;
+        color: rgba(206, 230, 241, 0.92);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        animation: fadeUp 1.2s ease-out both;
+      }
+
+      .hero-footnote span {
+        font-size: 1.1rem;
+      }
+
+      /* HERO RIGHT TILE STACK */
+
+      .hero-stack {
+        display: grid;
+        gap: 1rem;
+        animation: fadeInSoft 1s ease-out 0.4s both;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.15),
+          rgba(255, 255, 255, 0.05)
+        );
+        padding: 1.4rem 1.1rem;
+        border-radius: 22px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      }
+
+      .hero-profile-card {
+        background: rgba(247, 245, 239, 0.98);
+        color: #021017;
+        border-radius: 22px;
+        padding: 1.3rem 1.3rem 1.5rem;
+        box-shadow: var(--ttt-shadow-soft);
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 0.9rem;
+        align-items: center;
+      }
+
+      .hero-profile-avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #02141d;
+      }
+
+      .hero-profile-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.04);
+        transition: transform 0.4s ease;
+      }
+
+      @media (max-width: 780px) {
+        .hero-stack {
+          display: flex;
+          flex-direction: column;
+          gap: 1.4rem;
+        }
+
+        .hero-profile-card {
+          grid-template-columns: 1fr;
+          text-align: center;
+          padding: 1.5rem 1.4rem;
+        }
+
+        .hero-profile-avatar {
+          width: 100%;
+          height: auto;
+          max-width: 180px;
+          margin: 0 auto 1rem;
+          border-radius: 22px;
+        }
+      }
+
+      .hero-profile-card:hover .hero-profile-avatar img {
+        transform: scale(1.08);
+      }
+
+      .hero-profile-body h2 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .hero-profile-body p {
+        margin: 0.2rem 0 0.4rem;
+        font-size: 0.84rem;
+        color: #4a5b63;
+      }
+
+      .hero-profile-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        font-size: 0.75rem;
+      }
+
+      .hero-profile-tag {
+        padding: 0.26rem 0.55rem;
+        border-radius: 999px;
+        background: #edf3f6;
+        color: #23323a;
+      }
+
+      .hero-stats-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.7rem;
+      }
+
+      .hero-stat-tile {
+        border-radius: 18px;
+        background: rgba(2, 15, 23, 0.96);
+        color: #f1fbff;
+        padding: 0.7rem 0.8rem;
+        font-size: 0.8rem;
+        box-shadow: var(--ttt-shadow-light);
+        border: 1px solid rgba(163, 209, 228, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .hero-stat-tile:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+      }
+
+      .hero-stat-label {
+        opacity: 0.8;
+        margin-bottom: 0.2rem;
+      }
+
+      .hero-stat-value {
+        font-weight: 650;
+        font-size: 1.05rem;
+      }
+
+      .hero-dog-quote {
+        border-radius: 18px;
+        background: linear-gradient(135deg, #02141d, #06293b);
+        padding: 0.75rem 0.9rem;
+        font-size: 0.82rem;
+        color: #e5f3fb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
+        box-shadow: var(--ttt-shadow-light);
+        border: 1px solid rgba(120, 186, 210, 0.35);
+      }
+
+      .hero-dog-quote-icon {
+        font-size: 1.4rem;
+        animation: float 4s ease-in-out infinite;
+      }
+
+      /* GENERIC SECTION STYLES */
 
       section {
-        padding: 3.3rem 0;
+        padding: 4rem 0;
       }
+
+      .section-light {
+        background: var(--ttt-cream);
+      }
+
+      .section-alt {
+        background: #ffffff;
+      }
+
+      .section-dark {
+        background: radial-gradient(
+          circle at top right,
+          #164a64 0%,
+          #03141d 50%,
+          #02070b 100%
+        );
+        color: #f4fbff;
+      }
+
+      /* Soft gradient depth for sections */
+      .section-light,
+      .section-alt,
+      .section-dark {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .section-light::before,
+      .section-alt::before,
+      .section-dark::before {
+        content: "";
+        position: absolute;
+        inset: -20%;
+        background: radial-gradient(
+            circle at top left,
+            rgba(0, 194, 199, 0.16),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(255, 179, 71, 0.14),
+            transparent 55%
+          );
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .section-kicker {
+        text-align: center;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: rgba(94, 116, 128, 0.95);
+        margin-bottom: 0.35rem;
+      }
+
+      .section-dark .section-kicker {
+        color: rgba(191, 214, 227, 0.96);
+      }
+
+      .section-title {
+        text-align: center;
+        margin: 0 0 0.45rem;
+        font-size: 1.9rem;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        max-width: 560px;
+        margin: 0 auto 2.4rem;
+        font-size: 0.96rem;
+        color: rgba(67, 84, 96, 0.95);
+      }
+
+      .section-dark .section-subtitle {
+        color: rgba(218, 236, 244, 0.9);
+      }
+
+      /* ABOUT TILES */
+
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+        gap: 2.7rem;
+        align-items: center;
+      }
+
+      .about-body h2 {
+        font-size: 1.6rem;
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+      }
+
+      .about-body p {
+        font-size: 0.95rem;
+        color: #44535c;
+      }
+
+      .about-tiles {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin: 1.3rem 0 1.6rem;
+      }
+
+      .about-tile {
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 0.9rem 0.9rem 1rem;
+        font-size: 0.86rem;
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .about-tile:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .about-tile-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        font-size: 0.92rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .about-tile-title span {
+        font-size: 1.05rem;
+      }
+
+      .about-highlight {
+        border-radius: 16px;
+        background: #e9f4f8;
+        padding: 0.85rem 1rem;
+        font-size: 0.86rem;
+        color: #28404c;
+        border: 1px solid rgba(122, 186, 210, 0.6);
+      }
+
+      .about-media {
+        position: relative;
+        max-width: 480px;
+        margin: 0 auto;
+        animation: fadeInSoft 0.9s ease-out both;
+      }
+
+      .about-main-photo {
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--ttt-shadow-soft);
+      }
+
+      .about-main-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-floating-photo {
+        position: absolute;
+        right: -4%;
+        bottom: -10%;
+        width: 52%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: var(--ttt-shadow-light);
+        border: 3px solid #f7f5ef;
+      }
+
+      .about-floating-label {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        background: rgba(3, 20, 29, 0.9);
+        color: #f9fafb;
+        border-radius: 999px;
+        padding: 0.25rem 0.6rem;
+        font-size: 0.72rem;
+      }
+
+      /* MEET ARI SECTION */
+
+      .meet-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2.4rem;
+        align-items: center;
+        margin-top: 2.2rem;
+      }
+
+      .meet-copy h2 {
+        font-size: 1.5rem;
+        margin: 0 0 0.7rem;
+      }
+
+      .meet-copy p {
+        font-size: 0.95rem;
+        color: #435460;
+        margin: 0 0 0.7rem;
+      }
+
+      .meet-list {
+        list-style: none;
+        padding: 0;
+        margin: 0.4rem 0 0;
+        display: grid;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+        color: #374151;
+      }
+
+      .meet-list li::before {
+        content: "•";
+        color: #0ea5e9;
+        margin-right: 0.45rem;
+      }
+
+      .meet-photo {
+        position: relative;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .meet-photo-frame {
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: var(--ttt-shadow-soft);
+        border: 3px solid rgba(247, 245, 239, 0.95);
+        background: radial-gradient(
+          circle at top,
+          rgba(0, 194, 199, 0.22),
+          rgba(2, 11, 19, 0.96)
+        );
+      }
+
+      .meet-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .meet-photo-tag {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(2, 11, 19, 0.92);
+        color: #e5f3fb;
+        font-size: 0.74rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      /* SERVICES GRID TILES */
 
       .services-grid {
-        grid-template-columns: minmax(0, 1fr);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.3rem;
       }
+
+      .service-card {
+        border-radius: var(--ttt-radius-lg);
+        background: #ffffff;
+        padding: 1.2rem 1.2rem 1.35rem;
+        box-shadow: var(--ttt-shadow-light);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 50px rgba(0, 0, 0, 0.16);
+      }
+
+      .service-chip {
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #6a7a83;
+      }
+
+      .service-title {
+        font-size: 1.02rem;
+        font-weight: 600;
+      }
+
+      .service-price {
+        font-size: 1.14rem;
+        font-weight: 700;
+        color: #021017;
+      }
+
+      .service-body {
+        font-size: 0.86rem;
+        color: #4c5c64;
+        margin-top: 0.2rem;
+        flex: 1;
+      }
+
+      .service-note {
+        font-size: 0.78rem;
+        color: #7a4a12;
+        margin-top: 0.4rem;
+        padding-top: 0.35rem;
+        border-top: 1px dashed rgba(209, 184, 137, 0.75);
+      }
+
+      .service-ribbon {
+        position: absolute;
+        top: 0.9rem;
+        right: -2.4rem;
+        transform: rotate(36deg);
+        background: linear-gradient(90deg, #00c2c7, #ffb347);
+        color: #021017;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        padding: 0.25rem 2.6rem;
+        font-weight: 600;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* QUICK TIPS LIBRARY */
 
       .tips-grid {
-        grid-template-columns: minmax(0, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.4rem;
+        margin-top: 2.1rem;
       }
+
+      .tip-card {
+        position: relative;
+        border-radius: var(--ttt-radius-lg);
+        padding: 1.2rem 1.2rem 1.25rem;
+        background: radial-gradient(
+          circle at top left,
+          rgba(0, 194, 199, 0.15),
+          rgba(255, 255, 255, 0.98)
+        );
+        box-shadow: var(--ttt-shadow-light);
+        border: 1px solid rgba(15, 23, 42, 0.06);
+        overflow: hidden;
+      }
+
+      .tip-tag {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #0f766e;
+        margin-bottom: 0.4rem;
+      }
+
+      .tip-card h3 {
+        font-size: 0.98rem;
+        margin: 0 0 0.45rem;
+        color: #021017;
+      }
+
+      .tip-card p {
+        font-size: 0.9rem;
+        margin: 0;
+        color: #4b5563;
+      }
+
+      .tip-pill {
+        margin-top: 0.7rem;
+        font-size: 0.8rem;
+        color: #1f2933;
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.04);
+        display: inline-block;
+      }
+
+      .tip-card::after {
+        content: "";
+        position: absolute;
+        right: -25%;
+        bottom: -25%;
+        width: 60%;
+        aspect-ratio: 1 / 1;
+        border-radius: 999px;
+        background: radial-gradient(
+          circle at center,
+          rgba(14, 165, 233, 0.18),
+          transparent 60%
+        );
+        opacity: 0.9;
+        pointer-events: none;
+      }
+
+      /* SERVICE AREA MAP */
 
       .service-area-layout {
-        grid-template-columns: minmax(0, 1fr);
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+        gap: 2rem;
+        align-items: start;
+        margin-top: 2.2rem;
       }
 
-      .faq-grid {
-        grid-template-columns: minmax(0, 1fr);
+      .service-area-copy p {
+        font-size: 0.92rem;
+        color: #425563;
       }
 
-      .calendly-wrapper {
-        padding: 1rem;
+      .service-area-list {
+        margin: 1rem 0 0.4rem;
+        padding-left: 1.1rem;
+        font-size: 0.9rem;
+        color: #111827;
+        display: grid;
+        gap: 0.15rem;
       }
 
-      .calendly-inline-widget {
-        height: 640px;
+      .service-area-note {
+        font-size: 0.85rem;
+        color: #4b5563;
+        margin-top: 0.5rem;
       }
 
-      /* Fix the overlapping about images on mobile */
-      .about-floating-photo {
-        position: static;
+      .map-embed-wrapper {
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--ttt-shadow-soft);
+        border: 2px solid rgba(15, 23, 42, 0.06);
+        background: radial-gradient(
+          circle at top,
+          rgba(15, 23, 42, 0.75),
+          rgba(15, 23, 42, 1)
+        );
+        min-height: 260px;
+      }
+
+      .map-embed-wrapper iframe {
         width: 100%;
-        margin-top: 1rem;
-        border-width: 2px;
+        height: 100%;
+        border: 0;
+        display: block;
       }
 
-      /* Make gallery cards larger on mobile */
-      .gallery-grid {
-        grid-template-columns: minmax(0, 1fr);
+      .map-caption {
+        font-size: 0.8rem;
+        color: #6b7280;
+        margin-top: 0.45rem;
+        text-align: right;
+      }
+
+      /* GALLERY TILES */
+
+      .gallery-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
         gap: 1.6rem;
+        align-items: stretch;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.4rem;
       }
 
       .gallery-item {
-        aspect-ratio: 4 / 5;
+        position: relative;
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: var(--ttt-shadow-light);
+        aspect-ratio: 3 / 4;
+        background: #000;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
       }
-    }
-  
-    /* Scroll-triggered reveal animation */
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
 
-    /* Center hero text block */
-    .hero-copy {
-      text-align: left;
-    }
-    .hero-copy .hero-title {
-      text-align: center;
-    }
-    .hero-copy .hero-tagline {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    .hero-copy .hero-chip-row,
-    .hero-copy .hero-actions,
-    .hero-copy .hero-footnote {
-      justify-content: flex-start;
-    }
-    .hero-actions {
-      display: flex;
-    }
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.05);
+        transition: transform 0.35s ease;
+      }
 
-    /* Larger avatar, better crop */
-    .hero-profile-avatar {
-      width: 120px;
-      height: 150px;
-      border-radius: 26px;
-      overflow: hidden;
-    }
-    .hero-profile-avatar img {
-      object-position: center top;
-    }
+      .gallery-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 24px 55px rgba(0, 0, 0, 0.45);
+      }
 
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
 
-    .floating-book-btn {
-      position: fixed;
-      right: 1.2rem;
-      bottom: 1.2rem;
-      z-index: 40;
-      padding: 0.8rem 1.4rem;
-      border-radius: 999px;
-      background: rgba(4, 13, 20, 0.96);
-      border: 1px solid #00c2c7;
-      color: #e6f6fb;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      backdrop-filter: blur(18px);
-      transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, opacity 0.16s ease;
-    }
+      .gallery-tag {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(2, 15, 23, 0.78);
+        color: #f9fafb;
+        font-size: 0.8rem;
+      }
 
-    .floating-book-btn::after {
-      content: "→";
-      font-size: 0.95rem;
-    }
+      .gallery-feature-card {
+        border-radius: 24px;
+        background: #ffffff;
+        padding: 1.3rem 1.3rem 1.45rem;
+        box-shadow: var(--ttt-shadow-light);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        font-size: 0.9rem;
+      }
 
-    .floating-book-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 26px 60px rgba(0, 0, 0, 0.9);
-      background: rgba(6, 18, 28, 0.98);
-    }
+      .gallery-feature-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
 
-    @media (max-width: 600px) {
-      .floating-book-btn {
-        right: 0.9rem;
-        bottom: 0.9rem;
-        padding: 0.7rem 1.2rem;
+      .gallery-feature-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        font-size: 0.8rem;
+      }
+
+      .gallery-feature-badge {
+        padding: 0.28rem 0.7rem;
+        border-radius: 999px;
+        background: #edf3f6;
+        color: #22323d;
+      }
+
+      /* BOOKING / CALENDLY */
+
+      .calendly-wrapper {
+        border-radius: 26px;
+        background: #020c12;
+        padding: 1.4rem;
+        box-shadow: var(--ttt-shadow-soft);
+        border: 1px solid rgba(173, 210, 230, 0.28);
+      }
+
+      .calendly-text {
+        font-size: 0.9rem;
+        color: rgba(227, 240, 247, 0.9);
+        margin-bottom: 1rem;
+      }
+
+      .calendly-inline-widget {
+        min-width: 320px;
+        height: 680px;
+        border-radius: 18px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* FAQ */
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.3rem;
+      }
+
+      .faq-item {
+        border-radius: 18px;
+        background: rgba(2, 16, 24, 0.96);
+        border: 1px solid rgba(173, 210, 230, 0.3);
+        box-shadow: var(--ttt-shadow-light);
+        padding: 1.1rem 1.2rem 1.2rem;
+        font-size: 0.9rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .faq-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38);
+      }
+
+      .faq-item h3 {
+        margin: 0 0 0.45rem;
+        font-size: 1rem;
+      }
+
+      .faq-item p {
+        margin: 0;
+        color: rgba(223, 238, 246, 0.9);
+      }
+
+      /* FOOTER */
+
+      footer {
+        background: #02070c;
+        color: rgba(222, 235, 242, 0.92);
+        padding: 2.3rem 0 2.5rem;
         font-size: 0.85rem;
       }
-    }
 
-  
-
-    .footer-service-area {
-      font-size: 0.8rem;
-      max-width: 36rem;
-      color: rgba(209, 231, 241, 0.85);
-      margin: 0.4rem 0 0.2rem;
-    }
-
-    /* Reviews section */
-    #reviews.section-light {
-      background: #ffffff;
-    }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .review-card {
-      background: #f7f5ef;
-      border-radius: var(--ttt-radius-md);
-      padding: 1.4rem 1.5rem 1.3rem;
-      box-shadow: var(--ttt-shadow-light);
-      border: 1px solid rgba(15, 23, 42, 0.06);
-    }
-
-    .review-stars {
-      color: #fbbf24;
-      letter-spacing: 0.06em;
-      font-size: 0.9rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .review-text {
-      font-size: 0.92rem;
-      margin: 0.2rem 0 0.5rem;
-    }
-
-    .review-name {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #374151;
-    }
-
-    .review-source {
-      font-size: 0.78rem;
-      color: #6b7280;
-    }
-
-    .google-reviews-note {
-      font-size: 0.85rem;
-      color: #4b5563;
-      margin-top: 1rem;
-    }
-
-    .google-reviews-note a {
-      color: #0f766e;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 900px) {
-      .reviews-grid {
-        grid-template-columns: minmax(0, 1fr);
+      .footer-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+        gap: 2rem;
+        align-items: flex-start;
       }
-    }
 
-    .hero-snapshot {
-      display: grid;
-      gap: 1.4rem;
-      align-items: flex-start;
-    }
- 
+      .footer-brand-line {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 0.6rem;
+        font-weight: 600;
+      }
 
-    /* SIMPLE TRAINING / PHILOSOPHY SECTION */
+      .footer-logo-small {
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
 
-    .simple-training-section {
-      padding-top: 4.2rem;
-      padding-bottom: 4.4rem;
-    }
+      .footer-logo-small img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
 
-    .simple-training-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 2rem;
-      align-items: stretch;
-      margin-top: 2.2rem;
-    }
+      .footer-contact {
+        margin-top: 0.7rem;
+        display: grid;
+        gap: 0.2rem;
+      }
 
-    .simple-training-card {
-      position: relative;
-      background: linear-gradient(135deg, #f7f5ef 0%, #ffffff 45%, #e9f5f7 100%);
-      border-radius: var(--ttt-radius-lg);
-      padding: 1.8rem 1.7rem 1.9rem;
-      box-shadow: var(--ttt-shadow-light);
-      border: 1px solid rgba(15, 23, 42, 0.06);
-      overflow: hidden;
-      animation: fadeUp 1s ease-out both;
-    }
+      .footer-contact a {
+        color: inherit;
+      }
 
-    .simple-training-card::after {
-      content: "";
-      position: absolute;
-      right: -18%;
-      bottom: -30%;
-      width: 55%;
-      aspect-ratio: 1/1;
-      border-radius: 999px;
-      background:
-        radial-gradient(circle at center, rgba(0, 194, 199, 0.26), transparent 60%);
-      opacity: 0.9;
-      pointer-events: none;
-      z-index: -1;
-    }
+      .footer-meta {
+        text-align: right;
+        color: rgba(153, 172, 184, 0.92);
+      }
 
-    .simple-training-card h3 {
-      font-size: 1.35rem;
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-    }
+      .footer-meta p {
+        margin: 0.1rem 0;
+      }
 
-    .simple-training-card p {
-      font-size: 0.97rem;
-      color: #44535c;
-      margin-bottom: 0.9rem;
-    }
+      /* ANIMATIONS */
 
-    .simple-training-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.4rem 0 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-    .simple-training-list li {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.55rem;
-      align-items: flex-start;
-      font-size: 0.95rem;
-      color: #37434b;
-    }
+      @keyframes fadeInSoft {
+        from {
+          opacity: 0;
+          transform: translateY(18px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
 
-    .simple-training-list .icon {
-      width: 1.55rem;
-      height: 1.55rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 999px;
-      background: rgba(0, 194, 199, 0.08);
-      font-size: 0.98rem;
-    }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
 
-    .simple-training-aside {
-      align-self: center;
-      padding: 1.4rem 1.5rem;
-      border-radius: var(--ttt-radius-md);
-      background: radial-gradient(circle at top left, rgba(0, 194, 199, 0.12), transparent 60%),
-                  radial-gradient(circle at bottom right, rgba(255, 179, 71, 0.12), transparent 60%),
-                  #041018;
-      color: #e4f4fb;
-      box-shadow: var(--ttt-shadow-soft);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      position: relative;
-      overflow: hidden;
-    }
+      /* RESPONSIVE */
 
-    .simple-training-aside::before {
-      content: "";
-      position: absolute;
-      inset: -30%;
-      background:
-        radial-gradient(circle at top, rgba(15, 23, 42, 0.18), transparent 55%),
-        radial-gradient(circle at bottom, rgba(56, 189, 248, 0.18), transparent 60%);
-      opacity: 0.9;
-      pointer-events: none;
-      z-index: -1;
-    }
+      @media (max-width: 960px) {
+        .hero-inner {
+          grid-template-columns: minmax(0, 1fr);
+          padding-top: 3rem;
+        }
 
-    .simple-training-aside p {
-      position: relative;
-      margin: 0.8rem 0 0;
-      font-size: 0.93rem;
-      color: #dbe8ee;
-    }
+        .hero-stack {
+          max-width: 430px;
+          margin: 0 auto;
+        }
 
-    .simple-training-chip {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.28rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.78);
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #e5f5ff;
-    }
+        .about-layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
 
-    .simple-training-chip::before {
-      content: "★";
-      font-size: 0.8rem;
-    }
+        .about-media {
+          order: -1;
+          margin-bottom: 1.4rem;
+        }
 
-    @media (max-width: 840px) {
+        .services-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .gallery-layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .meet-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .tips-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .service-area-layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .footer-meta {
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .hero-tagline {
+          font-size: 22px;
+        }
+
+        .hero-actions {
+          justify-content: center !important;
+        }
+
+        .nav-toggle {
+          display: block;
+        }
+
+        .nav-links {
+          position: absolute;
+          inset: 74px 0 auto 0;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0.75rem 1.5rem 1.1rem;
+          background: rgba(2, 11, 19, 0.97);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          pointer-events: none;
+          transition: transform 0.16s ease, opacity 0.16s ease;
+        }
+
+        .nav-links.open {
+          transform: scaleY(1);
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        .nav-cta {
+          width: 100%;
+          justify-content: center;
+        }
+
+        section {
+          padding: 3.3rem 0;
+        }
+
+        .services-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .tips-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .service-area-layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .faq-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .calendly-wrapper {
+          padding: 1rem;
+        }
+
+        .calendly-inline-widget {
+          height: 640px;
+        }
+
+        /* Fix the overlapping about images on mobile */
+        .about-floating-photo {
+          position: static;
+          width: 100%;
+          margin-top: 1rem;
+          border-width: 2px;
+        }
+
+        /* Make gallery cards larger on mobile */
+        .gallery-grid {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 1.6rem;
+        }
+
+        .gallery-item {
+          aspect-ratio: 4 / 5;
+        }
+      }
+
+      /* Scroll-triggered reveal animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Center hero text block */
+      .hero-copy {
+        text-align: left;
+      }
+
+      .hero-copy .hero-title {
+        text-align: center;
+      }
+
+      .hero-copy .hero-tagline {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .hero-copy .hero-chip-row,
+      .hero-copy .hero-actions,
+      .hero-copy .hero-footnote {
+        justify-content: flex-start;
+      }
+
+      .hero-actions {
+        display: flex;
+      }
+
+      /* Larger avatar, better crop */
+      .hero-profile-avatar {
+        width: 120px;
+        height: 150px;
+        border-radius: 26px;
+        overflow: hidden;
+      }
+
+      .hero-profile-avatar img {
+        object-position: center top;
+      }
+
+      .floating-book-btn {
+        position: fixed;
+        right: 1.2rem;
+        bottom: 1.2rem;
+        z-index: 40;
+        padding: 0.8rem 1.4rem;
+        border-radius: 999px;
+        background: rgba(4, 13, 20, 0.96);
+        border: 1px solid #00c2c7;
+        color: #e6f6fb;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        backdrop-filter: blur(18px);
+        transition: transform 0.16s ease, box-shadow 0.16s ease,
+          background 0.16s ease, opacity 0.16s ease;
+      }
+
+      .floating-book-btn::after {
+        content: "→";
+        font-size: 0.95rem;
+      }
+
+      .floating-book-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 26px 60px rgba(0, 0, 0, 0.9);
+        background: rgba(6, 18, 28, 0.98);
+      }
+
+      @media (max-width: 600px) {
+        .floating-book-btn {
+          right: 0.9rem;
+          bottom: 0.9rem;
+          padding: 0.7rem 1.2rem;
+          font-size: 0.85rem;
+        }
+      }
+
+      .footer-service-area {
+        font-size: 0.8rem;
+        max-width: 36rem;
+        color: rgba(209, 231, 241, 0.85);
+        margin: 0.4rem 0 0.2rem;
+      }
+
+      /* Reviews section */
+      #reviews.section-light {
+        background: #ffffff;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .review-card {
+        background: #f7f5ef;
+        border-radius: var(--ttt-radius-md);
+        padding: 1.4rem 1.5rem 1.3rem;
+        box-shadow: var(--ttt-shadow-light);
+        border: 1px solid rgba(15, 23, 42, 0.06);
+      }
+
+      .review-stars {
+        color: #fbbf24;
+        letter-spacing: 0.06em;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .review-text {
+        font-size: 0.92rem;
+        margin: 0.2rem 0 0.5rem;
+      }
+
+      .review-name {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #374151;
+      }
+
+      .review-source {
+        font-size: 0.78rem;
+        color: #6b7280;
+      }
+
+      .google-reviews-note {
+        font-size: 0.85rem;
+        color: #4b5563;
+        margin-top: 1rem;
+      }
+
+      .google-reviews-note a {
+        color: #0f766e;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 900px) {
+        .reviews-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+
+      .hero-snapshot {
+        display: grid;
+        gap: 1.4rem;
+        align-items: flex-start;
+      }
+
+      /* SIMPLE TRAINING / PHILOSOPHY SECTION */
+
+      .simple-training-section {
+        padding-top: 4.2rem;
+        padding-bottom: 4.4rem;
+      }
+
       .simple-training-layout {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 1.6rem;
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+        margin-top: 2.2rem;
+      }
+
+      .simple-training-card {
+        position: relative;
+        background: linear-gradient(
+          135deg,
+          #f7f5ef 0%,
+          #ffffff 45%,
+          #e9f5f7 100%
+        );
+        border-radius: var(--ttt-radius-lg);
+        padding: 1.8rem 1.7rem 1.9rem;
+        box-shadow: var(--ttt-shadow-light);
+        border: 1px solid rgba(15, 23, 42, 0.06);
+        overflow: hidden;
+        animation: fadeUp 1s ease-out both;
+      }
+
+      .simple-training-card::after {
+        content: "";
+        position: absolute;
+        right: -18%;
+        bottom: -30%;
+        width: 55%;
+        aspect-ratio: 1 / 1;
+        border-radius: 999px;
+        background: radial-gradient(
+          circle at center,
+          rgba(0, 194, 199, 0.26),
+          transparent 60%
+        );
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .simple-training-card h3 {
+        font-size: 1.35rem;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      .simple-training-card p {
+        font-size: 0.97rem;
+        color: #44535c;
+        margin-bottom: 0.9rem;
+      }
+
+      .simple-training-list {
+        list-style: none;
+        padding: 0;
+        margin: 0.4rem 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .simple-training-list li {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 0.55rem;
+        align-items: flex-start;
+        font-size: 0.95rem;
+        color: #37434b;
+      }
+
+      .simple-training-list .icon {
+        width: 1.55rem;
+        height: 1.55rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: rgba(0, 194, 199, 0.08);
+        font-size: 0.98rem;
       }
 
       .simple-training-aside {
-        order: -1;
+        align-self: center;
+        padding: 1.4rem 1.5rem;
+        border-radius: var(--ttt-radius-md);
+        background: radial-gradient(
+            circle at top left,
+            rgba(0, 194, 199, 0.12),
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(255, 179, 71, 0.12),
+            transparent 60%
+          ),
+          #041018;
+        color: #e4f4fb;
+        box-shadow: var(--ttt-shadow-soft);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        position: relative;
+        overflow: hidden;
       }
-    }
 
-</style>
+      .simple-training-aside::before {
+        content: "";
+        position: absolute;
+        inset: -30%;
+        background: radial-gradient(
+            circle at top,
+            rgba(15, 23, 42, 0.18),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at bottom,
+            rgba(56, 189, 248, 0.18),
+            transparent 60%
+          );
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: -1;
+      }
 
-  <!-- LocalBusiness structured data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Trick & Treat Training",
-    "image": "https://www.trickandtreattraining.com/images/ari-standing-golden-front.jpg",
-    "url": "https://www.trickandtreattraining.com/",
-    "telephone": "+61 422 652 040",
-    "email": "ari@trickandtreattraining.com",
-    "description": "Positive, practical dog training in Melbourne helping you turn your feral child into your favourite child.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Melbourne",
-      "addressRegion": "VIC",
-      "addressCountry": "AU"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Melbourne"
-    },
-    "priceRange": "$$",
-    "sameAs": []
-  }
-  </script>
-</head>
-<body>
+      .simple-training-aside p {
+        position: relative;
+        margin: 0.8rem 0 0;
+        font-size: 0.93rem;
+        color: #dbe8ee;
+      }
 
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html#home" class="brand">
-      <div class="brand-mark">
-        <img src="images/logo-ttt.png" alt="Trick &amp; Treat Training logo" />
+      .simple-training-chip {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.28rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.78);
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #e5f5ff;
+      }
+
+      .simple-training-chip::before {
+        content: "★";
+        font-size: 0.8rem;
+      }
+
+      @media (max-width: 840px) {
+        .simple-training-layout {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 1.6rem;
+        }
+
+        .simple-training-aside {
+          order: -1;
+        }
+      }
+    </style>
+
+    <!-- LocalBusiness structured data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Trick & Treat Training",
+        "image": "https://www.trickandtreattraining.com/images/ari-standing-golden-front.jpg",
+        "url": "https://www.trickandtreattraining.com/",
+        "telephone": "+61 422 652 040",
+        "email": "ari@trickandtreattraining.com",
+        "description": "Positive, practical dog training in Melbourne helping you turn your feral child into your favourite child.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Melbourne",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Melbourne"
+        },
+        "priceRange": "$$",
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html#home" class="brand">
+          <div class="brand-mark">
+            <img
+              src="images/logo-ttt.png"
+              alt="Trick &amp; Treat Training logo"
+            />
+          </div>
+          <div>
+            <div class="brand-text-main">Trick &amp; Treat Training</div>
+            <div class="brand-text-sub">Helping you take the lead.</div>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav class="nav-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a
+            href="https://calendly.com/ari-trickandtreattraining/training-session"
+            target="_blank"
+            rel="noopener"
+            >Book</a
+          >
+          <a href="index.html#faqs">FAQs</a>
+          <a href="index.html#contact" class="nav-cta"
+            ><span>🐾</span>Enquire</a
+          >
+        </nav>
       </div>
-      <div>
-        <div class="brand-text-main">Trick &amp; Treat Training</div>
-        <div class="brand-text-sub">Helping you take the lead.</div>
+    </header>
+
+    <main id="home">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-media">
+          <video src="images/hero.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              <span>Dog training in Melbourne.</span>
+              <span>Helping you take the lead.</span>
+            </h1>
+
+            <div class="other-hero-wrapper">
+              <p class="hero-tagline">
+                Positive, in-home
+                <a href="#services">dog training across Melbourne</a> –
+                practical skills, calm walks and a happier life together.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  href="https://calendly.com/ari-trickandtreattraining/training-session"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  >Book a session <span>→</span></a
+                >
+                <a href="#services" class="btn-ghost"
+                  >View services &amp; pricing</a
+                >
+              </div>
+
+              <div class="hero-footnote">
+                ⭐ &nbsp; Helping Melbourne dog owners turn chaos into
+                confidence.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SNAPSHOT WORD TILES MOVED BELOW HERO -->
+      <section class="section-light reveal">
+        <div class="container hero-snapshot">
+          <div class="hero-stack reveal">
+            <article class="hero-profile-card">
+              <div class="hero-profile-avatar">
+                <img
+                  src="images/ari-standing-golden-front.jpg"
+                  alt="Ari with a Golden Retriever during dog training in Melbourne"
+                />
+              </div>
+              <div class="hero-profile-body">
+                <h2>Ari Masel</h2>
+                <p>Dog lover, cuddler, trainer and behaviourist.</p>
+                <div class="hero-profile-tags">
+                  <span class="hero-profile-tag"
+                    >1:1 coaching for humans &amp; dogs</span
+                  >
+                  <span class="hero-profile-tag"
+                    >Real-life, in-home support</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-tile">
+                <div class="hero-stat-label">Support style</div>
+                <div class="hero-stat-value">Kind</div>
+                <div>
+                  Reward-based dog training that builds confidence instead of
+                  fear.
+                </div>
+              </div>
+              <div class="hero-stat-tile">
+                <div class="hero-stat-label">Focus</div>
+                <div class="hero-stat-value">Real life</div>
+                <div>
+                  Training in and around your Melbourne home and local parks.
+                </div>
+              </div>
+              <div class="hero-stat-tile">
+                <div class="hero-stat-label">Goal</div>
+                <div class="hero-stat-value">Ease</div>
+                <div>
+                  So the hardest part of dog ownership is missing them when you
+                  leave.
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-dog-quote">
+              <div>
+                “Walks, tricks and training should feel like a team sport – not
+                a battle.”
+              </div>
+              <div class="hero-dog-quote-icon">🐶</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section-light reveal">
+        <div class="container">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">Dog training that feels human, too.</h2>
+          <p class="section-subtitle">
+            Trick &amp; Treat Training is here for the whole team – dog and
+            human. You’ll get clear guidance, zero judgement and sessions that
+            actually fit your Melbourne life.
+          </p>
+
+          <div class="about-layout">
+            <div class="about-body">
+              <h2>Support for every stage of the journey.</h2>
+              <p>
+                Whether you’re welcoming your first puppy or navigating big
+                feelings in an older dog, we’ll build skills, routines and
+                confidence together – with plenty of wiggles along the way.
+              </p>
+
+              <div class="about-tiles">
+                <div class="about-tile">
+                  <div class="about-tile-title">
+                    <span>✅</span>Positive-first training
+                  </div>
+                  <div>
+                    Reward-based methods that help dogs think, choose and feel
+                    safe – no intimidation, no shortcuts.
+                  </div>
+                </div>
+                <div class="about-tile">
+                  <div class="about-tile-title">
+                    <span>🏡</span>Real-world focus
+                  </div>
+                  <div>
+                    Sessions in your home and neighbourhood so we can work where
+                    the behaviour actually happens.
+                  </div>
+                </div>
+                <div class="about-tile">
+                  <div class="about-tile-title">
+                    <span>🧠</span>Big feelings welcome
+                  </div>
+                  <div>
+                    From reactivity to overwhelm, we break training into
+                    bite-sized steps you and your dog can handle.
+                  </div>
+                </div>
+                <div class="about-tile">
+                  <div class="about-tile-title">
+                    <span>👨‍👩‍👧‍👦</span>Help for humans too
+                  </div>
+                  <div>
+                    Jargon-free explanations, written notes and a trainer who
+                    actually gets what daily life is like.
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-highlight">
+                Every dog and human team is different. Your plan is built around
+                your goals, your space and your dog’s personality – not a
+                generic template.
+              </div>
+            </div>
+
+            <div class="about-media">
+              <div class="about-main-photo">
+                <img
+                  src="images/ari-walking-golden-side.jpg"
+                  alt="Loose-lead walking session with dog trainer in Melbourne"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEET ARI -->
+      <section id="meet" class="section-alt reveal">
+        <div class="container">
+          <div class="section-kicker">Meet the trainer</div>
+          <h2 class="section-title">
+            Hi, I&apos;m Ari – your dog&apos;s new best friend.
+          </h2>
+          <p class="section-subtitle">
+            I&apos;m here to make life easier for both ends of the lead – with
+            practical, science-based training and a big focus on real life.
+          </p>
+
+          <div class="meet-grid">
+            <div class="meet-copy">
+              <h2>Calm, clear support for you and your dog.</h2>
+              <p>
+                I grew up surrounded by animals and went on to complete a
+                Bachelor of Animal &amp; Veterinary Biosciences before
+                specialising in companion-dog behaviour and training here in
+                Melbourne.
+              </p>
+              <p>
+                These days, Trick &amp; Treat Training is my full-time obsession
+                – helping puppies, adolescent chaos-gremlins and sensitive dogs
+                feel safer, braver and more understood.
+              </p>
+              <ul class="meet-list">
+                <li>
+                  In-home training across Melbourne&apos;s inner &amp; eastern
+                  suburbs.
+                </li>
+                <li>
+                  Reward-based methods that help dogs think, not just
+                  &ldquo;obey&rdquo;.
+                </li>
+                <li>
+                  Clear plans, written notes and plenty of check-ins between
+                  sessions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="meet-photo">
+              <div class="meet-photo-frame">
+                <img
+                  src="images/ari-standing-golden-front.jpg"
+                  alt="Dog trainer Ari from Trick &amp; Treat Training in Melbourne park with a calm Golden Retriever"
+                />
+              </div>
+              <div class="meet-photo-tag">Trainer: Ari</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAINING PHILOSOPHY -->
+      <section
+        id="training-philosophy"
+        class="section-alt reveal simple-training-section"
+      >
+        <div class="container">
+          <div class="section-kicker">Training philosophy</div>
+          <h2 class="section-title">
+            Making training simple, relatable & actually doable.
+          </h2>
+          <p class="section-subtitle">
+            My entire approach is built around clear, relatable concepts that
+            turn complex behaviour science into simple, step-by-step processes
+            you can follow in real life.
+          </p>
+
+          <div class="simple-training-layout">
+            <article class="simple-training-card">
+              <h3>Training is a piece of cake 🍰</h3>
+              <p>
+                When we&apos;re desensitising a dog to something overwhelming,
+                we don&apos;t throw the whole cake at them at once. Instead, we
+                break the big trigger into tiny, palatable slices &mdash; one
+                piece at a time.
+              </p>
+              <ul class="simple-training-list">
+                <li>
+                  <span class="icon">🧠</span
+                  ><span
+                    >Break big, scary situations into small, safe steps.</span
+                  >
+                </li>
+                <li>
+                  <span class="icon">🍰</span
+                  ><span
+                    >Feed those steps one slice at a time so your dog can
+                    actually cope.</span
+                  >
+                </li>
+                <li>
+                  <span class="icon">✅</span
+                  ><span
+                    >Stack tiny wins until the whole “cake” feels easy.</span
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <aside class="simple-training-aside">
+              <div class="simple-training-chip">
+                No overwhelm. Just clear, kind training.
+              </div>
+              <p>
+                Together, we&apos;ll map out the right slices for your dog so
+                you always know exactly what to do, when to do it, and how to
+                tell it&apos;s working.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section-alt reveal">
+        <div class="container">
+          <div class="section-kicker">Services &amp; Pricing</div>
+          <h2 class="section-title">Choose the support that suits you.</h2>
+          <p class="section-subtitle">
+            Pricing matches trickandtreattraining.com exactly, so you can browse
+            here and book with confidence.
+          </p>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-chip">First step</div>
+              <div class="service-title">Private Training Session</div>
+              <div class="service-price">$200</div>
+              <div class="service-body">
+                Your starting point. Perfect for new puppy parents or tackling
+                specific behaviours with an existing dog. We’ll assess, plan and
+                get hands-on right away.
+              </div>
+              <div class="service-note"></div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-chip">Digital resource</div>
+              <div class="service-title">Puppy Plan</div>
+              <div class="service-price">$59</div>
+              <div class="service-body">
+                A 4-week step-by-step plan covering “what do I buy?”,
+                socialisation, toileting, routine, alone time and more – written
+                by a trainer who’s seen it all.
+              </div>
+              <div class="service-note">
+                Ideal if you love structure or want a clear roadmap alongside
+                in-person support.
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-ribbon">Most popular</div>
+              <div class="service-chip">Puppy program</div>
+              <div class="service-title">5-Session Package</div>
+              <div class="service-price">$900</div>
+              <div class="service-body">
+                Get your puppy off on the right paw. We’ll build foundations for
+                loose-lead walking, recall, social skills, calmness and more –
+                tailored to your Melbourne home and lifestyle.
+              </div>
+              <div class="service-note">
+                Spaced sessions give you time to practice while still feeling
+                supported.
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-chip">Ongoing support</div>
+              <div class="service-title">Walk &amp; Train</div>
+              <div class="service-price">$80</div>
+              <div class="service-body">
+                More than a walk. Your dog heads out with a trainer who
+                reinforces good manners, road safety and social skills – so your
+                walks feel easier too.
+              </div>
+              <div class="service-note">
+                Multiple walks per week? Enjoy 10% off each additional walk.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY / VIBE -->
+      <section id="gallery" class="section-light reveal">
+        <div class="container">
+          <div class="section-kicker">In action</div>
+          <h2 class="section-title">What training with us looks like.</h2>
+          <p class="section-subtitle">
+            A little peek behind the scenes – real sessions, real dogs and a lot
+            of joy. These are the kinds of moments you’ll be creating with your
+            dog.
+          </p>
+
+          <div class="gallery-layout">
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/ari-shake-paw.jpg"
+                  alt="Dog offering paw during a Trick &amp; Treat Training session in Melbourne"
+                />
+                <figcaption class="gallery-tag">Everyday manners</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img
+                  src="images/ari-leg-jump-trick.jpg"
+                  alt="Dog jumping over Ari's leg during a trick training session"
+                />
+                <figcaption class="gallery-tag">
+                  Tricks &amp; teamwork
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img
+                  src="images/ari-running-golden.jpg"
+                  alt="Running and playing with a Golden Retriever during recall training"
+                />
+                <figcaption class="gallery-tag">Play with purpose</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img
+                  src="images/ari-standing-golden-front.jpg"
+                  alt="Calm dog standing between Ari's legs in a Melbourne park"
+                />
+                <figcaption class="gallery-tag">Calm connection</figcaption>
+              </figure>
+            </div>
+
+            <aside class="gallery-feature-card">
+              <div class="gallery-feature-title">
+                Skills, structure &amp; plenty of silliness.
+              </div>
+              <p>
+                Training shouldn’t feel like bootcamp. We build solid
+                foundations – loose-lead walking, recall, calmness, focus – then
+                layer in fun tricks and games so your dog loves working with
+                you.
+              </p>
+              <div class="gallery-feature-badges">
+                <span class="gallery-feature-badge">Loose-lead walking</span>
+                <span class="gallery-feature-badge">Confidence building</span>
+                <span class="gallery-feature-badge">Impulse control</span>
+                <span class="gallery-feature-badge"
+                  >Tricks &amp; enrichment</span
+                >
+              </div>
+              <p>
+                Every session is shaped around your dog’s personality and energy
+                level. Sensitive soul? Firecracker? Something in between? We
+                meet them where they are.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOKING -->
+      <section id="book" class="section-dark reveal">
+        <div class="container">
+          <div class="section-kicker">Book</div>
+          <h2 class="section-title">Ready to get started?</h2>
+          <p class="section-subtitle">
+            Choose a time that suits you and we’ll start turning the chaos into
+            confidence. If you can’t find a time that works, just get in touch
+            and we’ll figure it out together.
+          </p>
+
+          <div class="calendly-wrapper">
+            <div class="calendly-text">
+              Use the calendar below to book your first session or chat about
+              which option suits you best.
+            </div>
+
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/ari-trickandtreattraining/training-session"
+            ></div>
+            <script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async
+            ></script>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK TIPS -->
+      <section id="quick-tips" class="section-alt reveal">
+        <div class="container">
+          <div class="section-kicker">Quick tips library</div>
+          <h2 class="section-title">Fast, real-world help between sessions.</h2>
+          <p class="section-subtitle">
+            Short, saveable tips you can start using today. As we go, this will
+            grow into a library of mini videos and how-tos for everyday life
+            with your dog.
+          </p>
+
+          <div class="tips-grid">
+            <article class="tip-card">
+              <div class="tip-tag">Loose-lead walking</div>
+              <h3>Reward the slack, not the pull.</h3>
+              <p>
+                Any time the lead softens, mark with &ldquo;yes&rdquo; and
+                reward by your leg. If they pull again, calmly change direction
+                and give them another chance to find the slack.
+              </p>
+              <div class="tip-pill">Great for daily walks</div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-tag">Puppy focus</div>
+              <h3>Say the name once, then pay attention hard.</h3>
+              <p>
+                Wait until your pup isn&apos;t looking at you, say their name
+                once, and reward the instant they flick their eyes towards you –
+                with food, pats or play.
+              </p>
+              <div class="tip-pill">Builds reliable name recognition</div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-tag">Calm at the door</div>
+              <h3>Door only opens for four paws on the floor.</h3>
+              <p>
+                If your dog jumps, the door pauses. When they land and pause,
+                mark &ldquo;yes&rdquo;, reward, and then the door opens. Calm
+                behaviour makes good things happen.
+              </p>
+              <div class="tip-pill">Helps with guests &amp; deliveries</div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-tag">Reactivity</div>
+              <h3>Think &ldquo;see dog, eat chicken, move away&rdquo;.</h3>
+              <p>
+                Spot other dogs early, feed a few tiny treats while you calmly
+                create distance, then let your dog decompress. Recovery speed
+                matters more than silence.
+              </p>
+              <div class="tip-pill">
+                Perfect for &ldquo;big feelings&rdquo; dogs
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-tag">Independence</div>
+              <h3>Start with tiny, boring separations.</h3>
+              <p>
+                Toss a treat on a mat, step into another room for a few seconds,
+                then come back like it&apos;s no big deal. Repeat until your dog
+                shrugs you leaving.
+              </p>
+              <div class="tip-pill">Builds confidence at home</div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-tag">Enrichment</div>
+              <h3>Use some meals for &ldquo;brain work&rdquo;.</h3>
+              <p>
+                Scatter-feed in the yard, use a cardboard box or simple puzzle
+                toys so your dog can sniff, shred and solve. Tired brains, not
+                just tired legs.
+              </p>
+              <div class="tip-pill">Great on wet &amp; busy days</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="reviews" class="section-light reveal">
+        <div class="container">
+          <div class="section-kicker">Reviews</div>
+          <h2 class="section-title">What Melbourne dog owners are saying.</h2>
+          <p class="section-subtitle">
+            Real feedback from people who&apos;ve trusted Trick &amp; Treat
+            Training with their favourite chaos gremlins.
+          </p>
+
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “Ari completely changed our walks. From pulling and barking at
+                everything to actually checking in with us. We finally enjoy
+                taking our dog out.”
+              </p>
+              <div class="review-name">Google review</div>
+              <div class="review-source">
+                Trick &amp; Treat Training on Google
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “Clear, kind and practical. We felt supported the whole way
+                through and loved that the training was tailored to our home and
+                routines.”
+              </p>
+              <div class="review-name">Google review</div>
+              <div class="review-source">
+                Trick &amp; Treat Training on Google
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                “Our anxious rescue has so much more confidence. Ari gave us
+                simple exercises and explained the &lsquo;why&rsquo; behind
+                everything.”
+              </p>
+              <div class="review-name">Google review</div>
+              <div class="review-source">
+                Trick &amp; Treat Training on Google
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE AREA / MAP -->
+      <section id="service-area" class="section-light reveal">
+        <div class="container">
+          <div class="section-kicker">Service area</div>
+          <h2 class="section-title">
+            In-home dog training across inner &amp; eastern Melbourne.
+          </h2>
+          <p class="section-subtitle">
+            We come to you so we can work where real life happens – your home,
+            your street and your local parks.
+          </p>
+
+          <div class="service-area-layout">
+            <div class="service-area-copy">
+              <p>
+                Trick &amp; Treat Training is based in Melbourne and regularly
+                visits suburbs such as:
+              </p>
+              <ul class="service-area-list">
+                <li>Hawthorn, Hawthorn East, Kew, Kew East</li>
+                <li>Camberwell, Surrey Hills, Mont Albert, Box Hill</li>
+                <li>Malvern, Glen Iris, Ashburton, Carnegie</li>
+                <li>Caulfield, Elsternwick, Balaclava, St Kilda East</li>
+                <li>Bentleigh, McKinnon, Ormond and nearby areas</li>
+              </ul>
+              <p class="service-area-note">
+                Not sure if you&apos;re in range? Send through your suburb when
+                you enquire and we&apos;ll let you know what travel looks like –
+                or recommend another trainer if we can&apos;t get to you.
+              </p>
+            </div>
+
+            <div class="service-area-map">
+              <div class="map-embed-wrapper">
+                <iframe
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Melbourne%20VIC&output=embed"
+                  title="Map of Trick &amp; Treat Training service area around Melbourne"
+                >
+                </iframe>
+              </div>
+              <p class="map-caption">
+                Pinch, scroll and zoom to explore the general area we cover.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faqs" class="section-dark reveal">
+        <div class="container">
+          <div class="section-kicker">FAQs</div>
+          <h2 class="section-title">Common questions, answered.</h2>
+          <p class="section-subtitle">
+            A quick taste of what most people ask before they book. If your
+            question isn’t here, reach out – we’re always happy to chat.
+          </p>
+
+          <div class="faq-grid">
+            <article class="faq-item">
+              <h3>What training style do you use?</h3>
+              <p>
+                We use reward-based, fear-free methods that encourage dogs to
+                think and make good choices. By rewarding effort and progress,
+                we build confidence and behaviour that actually sticks.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>What behaviours can you help with?</h3>
+              <p>
+                From puppy basics (toilet training, mouthing, jumping,
+                socialisation) through to reactivity, big feelings on walks and
+                separation struggles. We’ll chat through what’s going on and
+                make a plan.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Where does training happen?</h3>
+              <p>
+                Most sessions happen at your home and around your local streets
+                or parks – the places your dog actually lives and learns. For
+                park-specific issues, we can meet you on-location.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Do you cover all of Melbourne?</h3>
+              <p>
+                We work across Melbourne. Some suburbs may have a small travel
+                fee – send through your location when you enquire and we’ll
+                confirm what that looks like.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand-line">
+            <div class="footer-logo-small">
+              <img
+                src="images/logo-ttt.png"
+                alt="Trick &amp; Treat Training dog trainer Melbourne logo"
+              />
+            </div>
+            <div>Trick &amp; Treat Training</div>
+          </div>
+          <div>Helping you take the lead – one wiggle at a time.</div>
+
+          <div class="footer-contact">
+            <div><strong>Contact</strong></div>
+            <div>Phone: <a href="tel:+61422652040">0422 652 040</a></div>
+            <div>
+              Email:
+              <a href="mailto:ari@trickandtreattraining.com"
+                >ari@trickandtreattraining.com</a
+              >
+            </div>
+            <div>ABN: 32817656834</div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p>Dog Trainer | Melbourne, VIC</p>
+          <p class="footer-service-area">
+            Service area: inner Melbourne, bayside and eastern suburbs including
+            Brunswick, Coburg, Preston, Bundoora, Northcote, Fitzroy,
+            Collingwood, CBD & Docklands, Richmond, Hawthorn, Kew, Camberwell,
+            Malvern, Glen Iris, St Kilda, Elwood, Brighton, Caulfield, Carnegie,
+            Glen Waverley, Box Hill, Doncaster, Balwyn, Ringwood and nearby
+            areas.
+          </p>
+          <p>
+            © <span id="year"></span> Trick &amp; Treat Training. All rights
+            reserved.
+          </p>
+          <p>Website by Trick &amp; Treat Training &amp; ChatGPT.</p>
+        </div>
       </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+        });
+      });
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Scroll-triggered reveal animations
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18 }
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
+
+    <a
+      href="https://calendly.com/ari-trickandtreattraining/training-session"
+      class="floating-book-btn"
+      target="_blank"
+      rel="noopener"
+    >
+      Book now
     </a>
-
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-
-    <nav class="nav-links">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="https://calendly.com/ari-trickandtreattraining/training-session" target="_blank" rel="noopener">Book</a>
-      <a href="index.html#faqs">FAQs</a>
-      <a href="index.html#contact" class="nav-cta"><span>🐾</span>Enquire</a>
-    </nav>
-  </div>
-</header>
-<main id="home">
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-media">
-      <!-- Use a local video so it doesn't rely on an expiring link -->
-      <video src="images/hero.mp4" autoplay muted loop playsinline></video>
-    </div>
-
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <h1 class="hero-title">
-          <span>Dog training in Melbourne.</span> <span>Helping you take the lead.</span>
-        </h1>
-
-       <div class="other-hero-wrapper">
-         <p class="hero-tagline">
-          Positive, in-home <a href="#services">dog training across Melbourne</a> – practical skills, calm walks and a happier life together.
-        </p>
-
-        <div class="hero-actions">
-          <a href="https://calendly.com/ari-trickandtreattraining/training-session" target="_blank" rel="noopener" class="btn-primary">Book a session <span>→</span></a>
-          <a href="#services" class="btn-ghost">View services &amp; pricing</a>
-        </div>
-
-        <div class="hero-footnote">
-          
-          ⭐ &nbsp; Helping Melbourne dog owners turn chaos into confidence.
-        </div>
-       </div>
-      </div>
-
-      
-      </div>
-    </div>
-  </section>
-  <!-- SNAPSHOT WORD TILES MOVED BELOW HERO -->
-  <section class="section-light reveal">
-    <div class="container hero-snapshot">
-<div class="hero-stack reveal">
-        <article class="hero-profile-card">
-          <div class="hero-profile-avatar">
-            <img src="images/ari-standing-golden-front.jpg" alt="Ari with a Golden Retriever during dog training in Melbourne" />
-          </div>
-          <div class="hero-profile-body">
-            <h2>Ari Masel</h2>
-            <p>Dog lover, cuddler, trainer and behaviourist.</p>
-            <div class="hero-profile-tags">
-              <span class="hero-profile-tag">1:1 coaching for humans &amp; dogs</span>
-              <span class="hero-profile-tag">Real-life, in-home support</span>
-            </div>
-          </div>
-        </article>
-
-        <div class="hero-stats-row">
-          <div class="hero-stat-tile">
-            <div class="hero-stat-label">Support style</div>
-            <div class="hero-stat-value">Kind</div>
-            <div>Reward-based dog training that builds confidence instead of fear.</div>
-          </div>
-          <div class="hero-stat-tile">
-            <div class="hero-stat-label">Focus</div>
-            <div class="hero-stat-value">Real life</div>
-            <div>Training in and around your Melbourne home and local parks.</div>
-          </div>
-          <div class="hero-stat-tile">
-            <div class="hero-stat-label">Goal</div>
-            <div class="hero-stat-value">Ease</div>
-            <div>So the hardest part of dog ownership is missing them when you leave.</div>
-          </div>
-        </div>
-
-        <div class="hero-dog-quote">
-          <div>“Walks, tricks and training should feel like a team sport – not a battle.”</div>
-          <div class="hero-dog-quote-icon">🐶</div>
-        </div>
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section id="about" class="section-light reveal">
-    <div class="container">
-      <div class="section-kicker">About</div>
-      <h2 class="section-title">Dog training that feels human, too.</h2>
-      <p class="section-subtitle">
-        Trick &amp; Treat Training is here for the whole team – dog and human. You’ll get clear guidance, zero judgement and sessions that actually fit your Melbourne life.
-      </p>
-
-      <div class="about-layout">
-        <div class="about-body">
-          <h2>Support for every stage of the journey.</h2>
-          <p>
-            Whether you’re welcoming your first puppy or navigating big feelings in an older dog, we’ll build skills, routines and confidence together – with plenty of wiggles along the way.
-          </p>
-
-          <div class="about-tiles">
-            <div class="about-tile">
-              <div class="about-tile-title"><span>✅</span>Positive-first training</div>
-              <div>Reward-based methods that help dogs think, choose and feel safe – no intimidation, no shortcuts.</div>
-            </div>
-            <div class="about-tile">
-              <div class="about-tile-title"><span>🏡</span>Real-world focus</div>
-              <div>Sessions in your home and neighbourhood so we can work where the behaviour actually happens.</div>
-            </div>
-            <div class="about-tile">
-              <div class="about-tile-title"><span>🧠</span>Big feelings welcome</div>
-              <div>From reactivity to overwhelm, we break training into bite-sized steps you and your dog can handle.</div>
-            </div>
-            <div class="about-tile">
-              <div class="about-tile-title"><span>👨‍👩‍👧‍👦</span>Help for humans too</div>
-              <div>Jargon-free explanations, written notes and a trainer who actually gets what daily life is like.</div>
-            </div>
-          </div>
-
-          <div class="about-highlight">
-            Every dog and human team is different. Your plan is built around your goals, your space and your dog’s personality – not a generic template.
-          </div>
-        </div>
-
-        <div class="about-media">
-          <div class="about-main-photo">
-            <img src="images/ari-walking-golden-side.jpg" alt="Loose-lead walking session with dog trainer in Melbourne" />
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MEET ARI -->
-  <section id="meet" class="section-alt reveal">
-    <div class="container">
-      <div class="section-kicker">Meet the trainer</div>
-      <h2 class="section-title">Hi, I&apos;m Ari – your dog&apos;s new best friend.</h2>
-      <p class="section-subtitle">
-        I&apos;m here to make life easier for both ends of the lead – with practical, science-based training and a big focus on real life.
-      </p>
-
-      <div class="meet-grid">
-        <div class="meet-copy">
-          <h2>Calm, clear support for you and your dog.</h2>
-          <p>
-            I grew up surrounded by animals and went on to complete a Bachelor of Animal &amp; Veterinary Biosciences
-            before specialising in companion-dog behaviour and training here in Melbourne.
-          </p>
-          <p>
-            These days, Trick &amp; Treat Training is my full-time obsession – helping puppies, adolescent chaos-gremlins
-            and sensitive dogs feel safer, braver and more understood.
-          </p>
-          <ul class="meet-list">
-            <li>In-home training across Melbourne&apos;s inner &amp; eastern suburbs.</li>
-            <li>Reward-based methods that help dogs think, not just &ldquo;obey&rdquo;.</li>
-            <li>Clear plans, written notes and plenty of check-ins between sessions.</li>
-          </ul>
-        </div>
-
-        <div class="meet-photo">
-          <div class="meet-photo-frame">
-            <img src="images/ari-standing-golden-front.jpg" alt="Dog trainer Ari from Trick &amp; Treat Training in Melbourne park with a calm Golden Retriever" />
-          </div>
-          <div class="meet-photo-tag">Trainer: Ari</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- TRAINING PHILOSOPHY -->
-  <section id="training-philosophy" class="section-alt reveal simple-training-section">
-    <div class="container">
-      <div class="section-kicker">Training philosophy</div>
-      <h2 class="section-title">Making training simple, relatable & actually doable.</h2>
-      <p class="section-subtitle">
-        My entire approach is built around clear, relatable concepts that turn complex behaviour science into simple, step-by-step processes you can follow in real life.
-      </p>
-
-      <div class="simple-training-layout">
-        <article class="simple-training-card">
-          <h3>Training is a piece of cake 🍰</h3>
-          <p>
-            When we&apos;re desensitising a dog to something overwhelming, we don&apos;t throw the whole cake at them at once.
-            Instead, we break the big trigger into tiny, palatable slices &mdash; one piece at a time.
-          </p>
-          <ul class="simple-training-list">
-            <li><span class="icon">🧠</span><span>Break big, scary situations into small, safe steps.</span></li>
-            <li><span class="icon">🍰</span><span>Feed those steps one slice at a time so your dog can actually cope.</span></li>
-            <li><span class="icon">✅</span><span>Stack tiny wins until the whole “cake” feels easy.</span></li>
-          </ul>
-        </article>
-
-        <aside class="simple-training-aside">
-          <div class="simple-training-chip">No overwhelm. Just clear, kind training.</div>
-          <p>
-            Together, we&apos;ll map out the right slices for your dog so you always know exactly what to do,
-            when to do it, and how to tell it&apos;s working.
-          </p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- SERVICES -->
-  <section id="services" class="section-alt reveal">
-    <div class="container">
-      <div class="section-kicker">Services &amp; Pricing</div>
-      <h2 class="section-title">Choose the support that suits you.</h2>
-      <p class="section-subtitle">
-        Pricing matches trickandtreattraining.com exactly, so you can browse here and book with confidence.
-      </p>
-
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-chip">First step</div>
-          <div class="service-title">Private Training Session</div>
-          <div class="service-price">$200</div>
-          <div class="service-body">
-            Your starting point. Perfect for new puppy parents or tackling specific behaviours with an existing dog. We’ll assess, plan and get hands-on right away.
-          </div>
-          <div class="service-note">
-               </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-chip">Digital resource</div>
-          <div class="service-title">Puppy Plan</div>
-          <div class="service-price">$59</div>
-          <div class="service-body">
-            A 4-week step-by-step plan covering “what do I buy?”, socialisation, toileting, routine, alone time and more – written by a trainer who’s seen it all.
-          </div>
-          <div class="service-note">
-            Ideal if you love structure or want a clear roadmap alongside in-person support.
-          </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-ribbon">Most popular</div>
-          <div class="service-chip">Puppy program</div>
-          <div class="service-title">5-Session Package</div>
-          <div class="service-price">$900</div>
-          <div class="service-body">
-            Get your puppy off on the right paw. We’ll build foundations for loose-lead walking, recall, social skills, calmness and more – tailored to your Melbourne home and lifestyle.
-          </div>
-          <div class="service-note">
-            Spaced sessions give you time to practice while still feeling supported.
-          </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-chip">Ongoing support</div>
-          <div class="service-title">Walk &amp; Train</div>
-          <div class="service-price">$80</div>
-          <div class="service-body">
-            More than a walk. Your dog heads out with a trainer who reinforces good manners, road safety and social skills – so your walks feel easier too.
-          </div>
-          <div class="service-note">
-            Multiple walks per week? Enjoy 10% off each additional walk.
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY / VIBE -->
-  <section id="gallery" class="section-light reveal">
-    <div class="container">
-      <div class="section-kicker">In action</div>
-      <h2 class="section-title">What training with us looks like.</h2>
-      <p class="section-subtitle">
-        A little peek behind the scenes – real sessions, real dogs and a lot of joy. These are the kinds of moments you’ll be creating with your dog.
-      </p>
-
-      <div class="gallery-layout">
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="images/ari-shake-paw.jpg" alt="Dog offering paw during a Trick &amp; Treat Training session in Melbourne" />
-            <figcaption class="gallery-tag">Everyday manners</figcaption>
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="images/ari-leg-jump-trick.jpg" alt="Dog jumping over Ari's leg during a trick training session" />
-            <figcaption class="gallery-tag">Tricks &amp; teamwork</figcaption>
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="images/ari-running-golden.jpg" alt="Running and playing with a Golden Retriever during recall training" />
-            <figcaption class="gallery-tag">Play with purpose</figcaption>
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="images/ari-standing-golden-front.jpg" alt="Calm dog standing between Ari's legs in a Melbourne park" />
-            <figcaption class="gallery-tag">Calm connection</figcaption>
-          </figure>
-        </div>
-
-        <aside class="gallery-feature-card">
-          <div class="gallery-feature-title">Skills, structure &amp; plenty of silliness.</div>
-          <p>
-            Training shouldn’t feel like bootcamp. We build solid foundations – loose-lead walking, recall, calmness, focus – then layer in fun tricks and games so your dog loves working with you.
-          </p>
-          <div class="gallery-feature-badges">
-            <span class="gallery-feature-badge">Loose-lead walking</span>
-            <span class="gallery-feature-badge">Confidence building</span>
-            <span class="gallery-feature-badge">Impulse control</span>
-            <span class="gallery-feature-badge">Tricks &amp; enrichment</span>
-          </div>
-          <p>
-            Every session is shaped around your dog’s personality and energy level. Sensitive soul? Firecracker? Something in between? We meet them where they are.
-          </p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section id="book" class="section-dark reveal">
-    <div class="container">
-      <div class="section-kicker">Book</div>
-      <h2 class="section-title">Ready to get started?</h2>
-      <p class="section-subtitle">
-        Choose a time that suits you and we’ll start turning the chaos into confidence. If you can’t find a time that works, just get in touch and we’ll figure it out together.
-      </p>
-
-      <div class="calendly-wrapper">
-        <div class="calendly-text">
-          Use the calendar below to book your first session or chat about which option suits you best.
-        </div>
-
-        <!-- Calendly inline widget -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/ari-trickandtreattraining/training-session"></div>
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUICK TIPS -->
-  <section id="quick-tips" class="section-alt reveal">
-    <div class="container">
-      <div class="section-kicker">Quick tips library</div>
-      <h2 class="section-title">Fast, real-world help between sessions.</h2>
-      <p class="section-subtitle">
-        Short, saveable tips you can start using today. As we go, this will grow into a library of mini videos and how-tos for everyday life with your dog.
-      </p>
-
-      <div class="tips-grid">
-        <article class="tip-card">
-          <div class="tip-tag">Loose-lead walking</div>
-          <h3>Reward the slack, not the pull.</h3>
-          <p>
-            Any time the lead softens, mark with &ldquo;yes&rdquo; and reward by your leg. If they pull again, calmly change direction and give them another chance to find the slack.
-          </p>
-          <div class="tip-pill">Great for daily walks</div>
-        </article>
-
-        <article class="tip-card">
-          <div class="tip-tag">Puppy focus</div>
-          <h3>Say the name once, then pay attention hard.</h3>
-          <p>
-            Wait until your pup isn&apos;t looking at you, say their name once, and reward the instant they flick their eyes towards you – with food, pats or play.
-          </p>
-          <div class="tip-pill">Builds reliable name recognition</div>
-        </article>
-
-        <article class="tip-card">
-          <div class="tip-tag">Calm at the door</div>
-          <h3>Door only opens for four paws on the floor.</h3>
-          <p>
-            If your dog jumps, the door pauses. When they land and pause, mark &ldquo;yes&rdquo;, reward, and then the door opens. Calm behaviour makes good things happen.
-          </p>
-          <div class="tip-pill">Helps with guests &amp; deliveries</div>
-        </article>
-
-        <article class="tip-card">
-          <div class="tip-tag">Reactivity</div>
-          <h3>Think &ldquo;see dog, eat chicken, move away&rdquo;.</h3>
-          <p>
-            Spot other dogs early, feed a few tiny treats while you calmly create distance, then let your dog decompress. Recovery speed matters more than silence.
-          </p>
-          <div class="tip-pill">Perfect for &ldquo;big feelings&rdquo; dogs</div>
-        </article>
-
-        <article class="tip-card">
-          <div class="tip-tag">Independence</div>
-          <h3>Start with tiny, boring separations.</h3>
-          <p>
-            Toss a treat on a mat, step into another room for a few seconds, then come back like it&apos;s no big deal. Repeat until your dog shrugs you leaving.
-          </p>
-          <div class="tip-pill">Builds confidence at home</div>
-        </article>
-
-        <article class="tip-card">
-          <div class="tip-tag">Enrichment</div>
-          <h3>Use some meals for &ldquo;brain work&rdquo;.</h3>
-          <p>
-            Scatter-feed in the yard, use a cardboard box or simple puzzle toys so your dog can sniff, shred and solve. Tired brains, not just tired legs.
-          </p>
-          <div class="tip-pill">Great on wet &amp; busy days</div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- REVIEWS -->
-  <section id="reviews" class="section-light reveal">
-    <div class="container">
-      <div class="section-kicker">Reviews</div>
-      <h2 class="section-title">What Melbourne dog owners are saying.</h2>
-      <p class="section-subtitle">
-        Real feedback from people who&apos;ve trusted Trick &amp; Treat Training with their favourite chaos gremlins.
-      </p>
-
-      <div class="reviews-grid">
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “Ari completely changed our walks. From pulling and barking at everything to actually checking in with us. We finally enjoy taking our dog out.”
-          </p>
-          <div class="review-name">Google review</div>
-          <div class="review-source">Trick &amp; Treat Training on Google</div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “Clear, kind and practical. We felt supported the whole way through and loved that the training was tailored to our home and routines.”
-          </p>
-          <div class="review-name">Google review</div>
-          <div class="review-source">Trick &amp; Treat Training on Google</div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “Our anxious rescue has so much more confidence. Ari gave us simple exercises and explained the &lsquo;why&rsquo; behind everything.”
-          </p>
-          <div class="review-name">Google review</div>
-          <div class="review-source">Trick &amp; Treat Training on Google</div>
-        </article>
-      </div>
-
-      <p class="google-reviews-note">
-        These example snippets are based on common feedback themes from clients. You can replace them with exact wording from your own Google reviews, or embed a Google reviews widget. To read and share real reviews, search for <strong>“Trick &amp; Treat Training Melbourne”</strong> on Google Maps.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- SERVICE AREA / MAP -->
-  <section id="service-area" class="section-light reveal">
-    <div class="container">
-      <div class="section-kicker">Service area</div>
-      <h2 class="section-title">In-home dog training across inner &amp; eastern Melbourne.</h2>
-      <p class="section-subtitle">
-        We come to you so we can work where real life happens – your home, your street and your local parks.
-      </p>
-
-      <div class="service-area-layout">
-        <div class="service-area-copy">
-          <p>
-            Trick &amp; Treat Training is based in Melbourne and regularly visits suburbs such as:
-          </p>
-          <ul class="service-area-list">
-            <li>Hawthorn, Hawthorn East, Kew, Kew East</li>
-            <li>Camberwell, Surrey Hills, Mont Albert, Box Hill</li>
-            <li>Malvern, Glen Iris, Ashburton, Carnegie</li>
-            <li>Caulfield, Elsternwick, Balaclava, St Kilda East</li>
-            <li>Bentleigh, McKinnon, Ormond and nearby areas</li>
-          </ul>
-          <p class="service-area-note">
-            Not sure if you&apos;re in range? Send through your suburb when you enquire and we&apos;ll let you know what travel looks like – or recommend another trainer if we can&apos;t get to you.
-          </p>
-        </div>
-
-        <div class="service-area-map">
-          <div class="map-embed-wrapper">
-            <iframe
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Melbourne%20VIC&output=embed"
-              title="Map of Trick &amp; Treat Training service area around Melbourne">
-            </iframe>
-          </div>
-          <p class="map-caption">Pinch, scroll and zoom to explore the general area we cover.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- FAQ -->
-  <section id="faqs" class="section-dark reveal">
-    <div class="container">
-      <div class="section-kicker">FAQs</div>
-      <h2 class="section-title">Common questions, answered.</h2>
-      <p class="section-subtitle">
-        A quick taste of what most people ask before they book. If your question isn’t here, reach out – we’re always happy to chat.
-      </p>
-
-      <div class="faq-grid">
-        <article class="faq-item">
-          <h3>What training style do you use?</h3>
-          <p>
-            We use reward-based, fear-free methods that encourage dogs to think and make good choices. By rewarding effort and progress, we build confidence and behaviour that actually sticks.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>What behaviours can you help with?</h3>
-          <p>
-            From puppy basics (toilet training, mouthing, jumping, socialisation) through to reactivity, big feelings on walks and separation struggles. We’ll chat through what’s going on and make a plan.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>Where does training happen?</h3>
-          <p>
-            Most sessions happen at your home and around your local streets or parks – the places your dog actually lives and learns. For park-specific issues, we can meet you on-location.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>Do you cover all of Melbourne?</h3>
-          <p>
-            We work across Melbourne. Some suburbs may have a small travel fee – send through your location when you enquire and we’ll confirm what that looks like.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer id="contact">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand-line">
-        <div class="footer-logo-small">
-          <img src="images/logo-ttt.png" alt="Trick &amp; Treat Training dog trainer Melbourne logo" />
-        </div>
-        <div>Trick &amp; Treat Training</div>
-      </div>
-      <div>Helping you take the lead – one wiggle at a time.</div>
-
-      <div class="footer-contact">
-        <div><strong>Contact</strong></div>
-        <div>Phone: <a href="tel:+61422652040">0422 652 040</a></div>
-        <div>Email: <a href="mailto:ari@trickandtreattraining.com">ari@trickandtreattraining.com</a></div>
-        <div>ABN: 32817656834</div>
-      </div>
-    </div>
-
-    <div class="footer-meta">
-      <p>Dog Trainer | Melbourne, VIC</p>
-      <p class="footer-service-area">Service area: inner Melbourne, bayside and eastern suburbs including Brunswick, Coburg, Preston, Bundoora, Northcote, Fitzroy, Collingwood, CBD & Docklands, Richmond, Hawthorn, Kew, Camberwell, Malvern, Glen Iris, St Kilda, Elwood, Brighton, Caulfield, Carnegie, Glen Waverley, Box Hill, Doncaster, Balwyn, Ringwood and nearby areas.</p>
-      <p>© <span id="year"></span> Trick &amp; Treat Training. All rights reserved.</p>
-      <p>Website by Trick &amp; Treat Training &amp; ChatGPT.</p>
-    </div>
-  </div>
-</footer>
-
-
-<script>
-  // Mobile nav toggle (existing)
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-    });
-  });
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Scroll-triggered reveal animations
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.18 });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
-
-  <a href="https://calendly.com/ari-trickandtreattraining/training-session"
-     class="floating-book-btn"
-     target="_blank"
-     rel="noopener">
-    Book now
-  </a>
-
-
-
-  
-
-</body>
+  </body>
 </html>
+∏
